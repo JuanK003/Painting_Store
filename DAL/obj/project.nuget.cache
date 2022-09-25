@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Ihv6ojEIFIWy8bgT8enKfkb33MIAWLqpebmZxmCe6BG3LbU5LcAJxTEUJptGEfrJRj2L75H8nxi7tst3qk7m7Q==",
+  "dgSpecHash": "pMbIZU2R/feaMhZJjVJFdqBxe3oo1nAwqispxcNlOCEbFEBVAjmJhA5MQn7fEKdRfcCZiLNHZAMakgLdHxrPMw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\juanp\\Source\\Repos\\Painting_Store\\DAL\\DAL.csproj",
+  "projectFilePath": "C:\\Users\\juanp\\source\\repos\\Painting_Store\\DAL\\DAL.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -1,4 +1,4 @@
-namespace WinUI
+namespace DisenioInterfacesBD2
 {
     internal static class Program
     {

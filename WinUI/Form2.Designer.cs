@@ -132,7 +132,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::DisenioInterfacesBD2.Properties.Resources.gettyimages_506323310_612x612;
+            this.pictureBox1.Image = global::WinUI.Properties.Resources.gettyimages_506323310_612x612;
             this.pictureBox1.Location = new System.Drawing.Point(1, -2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(117, 435);
