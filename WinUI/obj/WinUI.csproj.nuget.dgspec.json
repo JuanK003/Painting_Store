@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\juanp\\Source\\Repos\\Painting_Store\\WinUI\\WinUI.csproj": {}
+    "C:\\Users\\juanp\\source\\repos\\Painting_Store\\WinUI\\WinUI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\juanp\\Source\\Repos\\Painting_Store\\WinUI\\WinUI.csproj": {
+    "C:\\Users\\juanp\\source\\repos\\Painting_Store\\WinUI\\WinUI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\juanp\\Source\\Repos\\Painting_Store\\WinUI\\WinUI.csproj",
+        "projectUniqueName": "C:\\Users\\juanp\\source\\repos\\Painting_Store\\WinUI\\WinUI.csproj",
         "projectName": "WinUI",
-        "projectPath": "C:\\Users\\juanp\\Source\\Repos\\Painting_Store\\WinUI\\WinUI.csproj",
+        "projectPath": "C:\\Users\\juanp\\source\\repos\\Painting_Store\\WinUI\\WinUI.csproj",
         "packagesPath": "C:\\Users\\juanp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\juanp\\Source\\Repos\\Painting_Store\\WinUI\\obj\\",
+        "outputPath": "C:\\Users\\juanp\\source\\repos\\Painting_Store\\WinUI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

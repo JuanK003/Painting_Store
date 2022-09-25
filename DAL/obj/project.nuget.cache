@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Z1pTT5Z+F6sTA4Zj0mIdmUj7SZpNJKFoaB/H0VeWXbd7NhYu4xXZg2TEzQLYJSIyDHVTK9U0EtqiS37jFU1KnQ==",
+  "dgSpecHash": "sb3NWPVF0XNr5z2YEByLZhTN3g83gzrLwFESFdyJ79oZZU6adjyCNhRtfy6cf9j2cSxCkrzXgOYcHROW8l7QKg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\juanp\\Source\\Repos\\Painting_Store\\DAL\\DAL.csproj",
+  "projectFilePath": "C:\\Users\\juanp\\source\\repos\\Painting_Store\\DAL\\DAL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\juanp\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\juanp\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
