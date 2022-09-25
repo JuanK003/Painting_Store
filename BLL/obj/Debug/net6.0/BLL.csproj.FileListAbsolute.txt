@@ -10,3 +10,6 @@ C:\Users\juanp\Source\Repos\Painting_Store\BLL\obj\Debug\net6.0\BLL.dll
 C:\Users\juanp\Source\Repos\Painting_Store\BLL\obj\Debug\net6.0\refint\BLL.dll
 C:\Users\juanp\Source\Repos\Painting_Store\BLL\obj\Debug\net6.0\BLL.pdb
 C:\Users\juanp\Source\Repos\Painting_Store\BLL\obj\Debug\net6.0\ref\BLL.dll
+C:\Users\juanp\source\repos\Painting_Store\BLL\bin\Debug\net6.0\DAL.dll
+C:\Users\juanp\source\repos\Painting_Store\BLL\bin\Debug\net6.0\DAL.pdb
+C:\Users\juanp\source\repos\Painting_Store\BLL\obj\Debug\net6.0\BLL.csproj.CopyComplete

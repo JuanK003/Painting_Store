@@ -778,6 +778,19 @@
             "rid": "win"
           }
         }
+      },
+      "DAL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.Data.SqlClient": "5.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DAL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DAL.dll": {}
+        }
       }
     }
   },
@@ -2557,10 +2570,16 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "DAL/1.0.0": {
+      "type": "project",
+      "path": "../DAL/DAL.csproj",
+      "msbuildProject": "../DAL/DAL.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "DAL >= 1.0.0",
       "Microsoft.Data.SqlClient >= 5.0.0"
     ]
   },
@@ -2571,11 +2590,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\juanp\\Source\\Repos\\Painting_Store\\BLL\\BLL.csproj",
+      "projectUniqueName": "C:\\Users\\juanp\\source\\repos\\Painting_Store\\BLL\\BLL.csproj",
       "projectName": "BLL",
-      "projectPath": "C:\\Users\\juanp\\Source\\Repos\\Painting_Store\\BLL\\BLL.csproj",
+      "projectPath": "C:\\Users\\juanp\\source\\repos\\Painting_Store\\BLL\\BLL.csproj",
       "packagesPath": "C:\\Users\\juanp\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\juanp\\Source\\Repos\\Painting_Store\\BLL\\obj\\",
+      "outputPath": "C:\\Users\\juanp\\source\\repos\\Painting_Store\\BLL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2595,7 +2614,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\juanp\\source\\repos\\Painting_Store\\DAL\\DAL.csproj": {
+              "projectPath": "C:\\Users\\juanp\\source\\repos\\Painting_Store\\DAL\\DAL.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
