@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\juanp\\source\\repos\\Painting_Store\\BLL\\BLL.csproj": {}
+    "C:\\Users\\juanp\\Source\\Repos\\Painting_Store\\BLL\\BLL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\juanp\\source\\repos\\Painting_Store\\BLL\\BLL.csproj": {
+    "C:\\Users\\juanp\\Source\\Repos\\Painting_Store\\BLL\\BLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\juanp\\source\\repos\\Painting_Store\\BLL\\BLL.csproj",
+        "projectUniqueName": "C:\\Users\\juanp\\Source\\Repos\\Painting_Store\\BLL\\BLL.csproj",
         "projectName": "BLL",
-        "projectPath": "C:\\Users\\juanp\\source\\repos\\Painting_Store\\BLL\\BLL.csproj",
+        "projectPath": "C:\\Users\\juanp\\Source\\Repos\\Painting_Store\\BLL\\BLL.csproj",
         "packagesPath": "C:\\Users\\juanp\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\juanp\\Source\\Repos\\Painting_Store\\BLL\\obj\\",
         "projectStyle": "PackageReference",
@@ -43,6 +43,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
