@@ -1,0 +1,17 @@
+C:\Users\juanp\Source\Repos\Painting_Store\WinUI\bin\Debug\net6.0-windows\WinUI.exe
+C:\Users\juanp\Source\Repos\Painting_Store\WinUI\bin\Debug\net6.0-windows\WinUI.deps.json
+C:\Users\juanp\Source\Repos\Painting_Store\WinUI\bin\Debug\net6.0-windows\WinUI.runtimeconfig.json
+C:\Users\juanp\Source\Repos\Painting_Store\WinUI\bin\Debug\net6.0-windows\WinUI.dll
+C:\Users\juanp\Source\Repos\Painting_Store\WinUI\bin\Debug\net6.0-windows\WinUI.pdb
+C:\Users\juanp\Source\Repos\Painting_Store\WinUI\obj\Debug\net6.0-windows\WinUI.csproj.AssemblyReference.cache
+C:\Users\juanp\Source\Repos\Painting_Store\WinUI\obj\Debug\net6.0-windows\WinUI.Form1.resources
+C:\Users\juanp\Source\Repos\Painting_Store\WinUI\obj\Debug\net6.0-windows\WinUI.csproj.GenerateResource.cache
+C:\Users\juanp\Source\Repos\Painting_Store\WinUI\obj\Debug\net6.0-windows\WinUI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\juanp\Source\Repos\Painting_Store\WinUI\obj\Debug\net6.0-windows\WinUI.AssemblyInfoInputs.cache
+C:\Users\juanp\Source\Repos\Painting_Store\WinUI\obj\Debug\net6.0-windows\WinUI.AssemblyInfo.cs
+C:\Users\juanp\Source\Repos\Painting_Store\WinUI\obj\Debug\net6.0-windows\WinUI.csproj.CoreCompileInputs.cache
+C:\Users\juanp\Source\Repos\Painting_Store\WinUI\obj\Debug\net6.0-windows\WinUI.dll
+C:\Users\juanp\Source\Repos\Painting_Store\WinUI\obj\Debug\net6.0-windows\refint\WinUI.dll
+C:\Users\juanp\Source\Repos\Painting_Store\WinUI\obj\Debug\net6.0-windows\WinUI.pdb
+C:\Users\juanp\Source\Repos\Painting_Store\WinUI\obj\Debug\net6.0-windows\WinUI.genruntimeconfig.cache
+C:\Users\juanp\Source\Repos\Painting_Store\WinUI\obj\Debug\net6.0-windows\ref\WinUI.dll
