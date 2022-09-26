@@ -66,6 +66,7 @@ namespace DisenioInterfacesBD2
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            //MessageBox.Show(Environment.CurrentDirectory);
             // La linea se ejecuta si los niveles de acceso no estan disponibles
             // classLogicaJP.restoreNivelesAcceso();
         }

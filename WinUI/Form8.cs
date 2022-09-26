@@ -26,6 +26,7 @@ namespace DisenioInterfacesBD2
         {
             dataGridView1.DataSource = classLogicaJP.ListarProveedores();
             dataGridView1.Refresh();
+            label3.Text = classLogicaJP.numeroProveedores() + "";
         }
 
         private void button1_Click(object sender, EventArgs e)

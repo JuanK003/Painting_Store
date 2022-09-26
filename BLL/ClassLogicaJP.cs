@@ -145,6 +145,11 @@ namespace BLL
             }
         }
 
+        public int numeroProveedores()
+        {
+            return (int)_proveedores.ScalarQueryNumeroProveedores();
+        }
+
         // Tabla Clientes
         public DataTable Listar()
         {

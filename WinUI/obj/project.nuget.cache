@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "pQz2MV1ysviI0/0A47HtXbf4lQirjqrWim/4PD0keXLTEdHbBbcFGGM/4eSe/oAuaeLdW4EzC+4sHerWEktO2Q==",
+  "dgSpecHash": "wz3dqmeXgMDE0yeC2mn76giK3iH6CPovHCNdvvP58TzX5too40a8jlcmwV5zoFeXnq1veuRMwGEh0iTWG0sLkA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Acer\\Source\\Repos\\Painting_Store\\WinUI\\WinUI.csproj",
+  "projectFilePath": "C:\\Users\\Acer\\source\\repos\\Painting_Store\\WinUI\\WinUI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Acer\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Acer\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
+    "C:\\Users\\Acer\\.nuget\\packages\\extended.wpf.toolkit\\4.4.0\\extended.wpf.toolkit.4.4.0.nupkg.sha512",
     "C:\\Users\\Acer\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\Acer\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\Acer\\.nuget\\packages\\microsoft.data.sqlclient\\5.0.0\\microsoft.data.sqlclient.5.0.0.nupkg.sha512",
