@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "YPhbSz8eSZjitJnjFIcLEhyORvx13tQZqIc/3TpPuwKoIGk1tat49yu4MEmksvJyMARRCrf8reeEInMJAGxL5w==",
+  "dgSpecHash": "F9GhDr7egaTbMBwYWysHtI6I25nQHZzJkfh9Zow2u0NL/5dMamWc5Z8c+2AQ5TSWOhgqDrzbwy1FfKxiYlgWpw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Acer\\Source\\Repos\\Painting_Store\\WinUI\\WinUI.csproj",
+  "projectFilePath": "C:\\Users\\Acer\\source\\repos\\Painting_Store\\WinUI\\WinUI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Acer\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Acer\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
