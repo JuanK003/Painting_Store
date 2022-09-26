@@ -34,6 +34,7 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -45,6 +46,7 @@
             this.button2.TabIndex = 78;
             this.button2.Text = "Editar";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -54,6 +56,7 @@
             this.button1.TabIndex = 77;
             this.button1.Text = "Nuevo";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label6
             // 
@@ -89,11 +92,22 @@
             this.label1.TabIndex = 73;
             this.label1.Text = "Aplicación del Producto.";
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(751, 256);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(275, 23);
+            this.button3.TabIndex = 79;
+            this.button3.Text = "Eliminar";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // Form11
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1157, 386);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label6);
@@ -102,6 +116,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Form11";
             this.Text = "Form11";
+            this.Load += new System.EventHandler(this.Form11_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -116,5 +131,6 @@
         private TextBox textBox3;
         private DataGridView dataGridView1;
         private Label label1;
+        private Button button3;
     }
 }
