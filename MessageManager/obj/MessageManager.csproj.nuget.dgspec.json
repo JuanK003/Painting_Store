@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Acer\\source\\repos\\Painting_Store\\MessageManager\\MessageManager.csproj": {}
+    "C:\\Users\\Acer\\Source\\Repos\\Painting_Store\\MessageManager\\MessageManager.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Acer\\source\\repos\\Painting_Store\\MessageManager\\MessageManager.csproj": {
+    "C:\\Users\\Acer\\Source\\Repos\\Painting_Store\\MessageManager\\MessageManager.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Acer\\source\\repos\\Painting_Store\\MessageManager\\MessageManager.csproj",
+        "projectUniqueName": "C:\\Users\\Acer\\Source\\Repos\\Painting_Store\\MessageManager\\MessageManager.csproj",
         "projectName": "MessageManager",
-        "projectPath": "C:\\Users\\Acer\\source\\repos\\Painting_Store\\MessageManager\\MessageManager.csproj",
+        "projectPath": "C:\\Users\\Acer\\Source\\Repos\\Painting_Store\\MessageManager\\MessageManager.csproj",
         "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Acer\\source\\repos\\Painting_Store\\MessageManager\\obj\\",
+        "outputPath": "C:\\Users\\Acer\\Source\\Repos\\Painting_Store\\MessageManager\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Acer\\AppData\\Roaming\\NuGet\\NuGet.Config",

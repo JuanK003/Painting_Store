@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "610IGixH1kY3qasXuwpuzJWMrQBxJ+pBNi8IUD2tB4XjUB2YvMvm5ogvDcAkgjyisU5hzJpUfdJqE3Js6I68sg==",
+  "dgSpecHash": "UG4AElDkqRZY1a4ty9TKChPfFSij8UmBYf0IdyREd9vsZ0Dwoxvylrn7GnEY3mEl0ASvHz3eWmW+fbTXOV4ruA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Acer\\source\\repos\\Painting_Store\\BLL\\BLL.csproj",
+  "projectFilePath": "C:\\Users\\Acer\\Source\\Repos\\Painting_Store\\BLL\\BLL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Acer\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Acer\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
