@@ -7,10 +7,22 @@ namespace BLL
     {
         private ClienteTableAdapter _clientes;
         private ProveedorTableAdapter _proveedores;
+        private NivelesAccesoTableAdapter _nivelesacceso;
+
         public ClassLogicaJP()
         {
             _clientes = new ClienteTableAdapter();
             _proveedores = new ProveedorTableAdapter();
+            _nivelesacceso = new NivelesAccesoTableAdapter();
+        }
+
+        public void restoreNivelesAcceso()
+        {
+            _nivelesacceso.DeleteQueryReset();
+            _nivelesacceso.InsertQueryNivelesAcceso("Administrador");
+            _nivelesacceso.InsertQueryNivelesAcceso("Bodeguero");
+            _nivelesacceso.InsertQueryNivelesAcceso("Cajero");
+            _nivelesacceso.InsertQueryNivelesAcceso("Gerente");
         }
 
         // Tabla Proveedores

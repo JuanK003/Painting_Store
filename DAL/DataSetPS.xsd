@@ -161,7 +161,7 @@ SELECT IdAcceso, NombreAcceso FROM NivelesAcceso WHERE (IdAcceso = @IdAcceso)</C
               <Mapping SourceColumn="NombreAcceso" DataSetColumn="NombreAcceso" />
             </Mappings>
             <Sources>
-              <DbSource ConnectionRef="PaintingStoreDatabaseConnectionString" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="DeleteQueryNivelesAcceso" Modifier="Public" Name="DeleteQueryNivelesAcceso" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="DeleteQueryNivelesAcceso">
+              <DbSource ConnectionRef="PaintingStoreDatabaseConnectionString" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="DeleteQueryNivelesAcceso" Modifier="Public" Name="DeleteQueryNivelesAcceso" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="DeleteQueryNivelesAcceso">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>DELETE FROM [dbo].[NivelesAcceso] WHERE [IdAcceso] = @Original_IdAcceso</CommandText>
@@ -171,7 +171,15 @@ SELECT IdAcceso, NombreAcceso FROM NivelesAcceso WHERE (IdAcceso = @IdAcceso)</C
                   </DbCommand>
                 </DeleteCommand>
               </DbSource>
-              <DbSource ConnectionRef="PaintingStoreDatabaseConnectionString" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="InsertQueryNivelesAcceso" Modifier="Public" Name="InsertQueryNivelesAcceso" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="InsertQueryNivelesAcceso">
+              <DbSource ConnectionRef="PaintingStoreDatabaseConnectionString" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="DeleteQueryReset" Modifier="Public" Name="DeleteQueryReset" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy3" UserSourceName="DeleteQueryReset">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>DELETE FROM [dbo].[NivelesAcceso]</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </DeleteCommand>
+              </DbSource>
+              <DbSource ConnectionRef="PaintingStoreDatabaseConnectionString" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="InsertQueryNivelesAcceso" Modifier="Public" Name="InsertQueryNivelesAcceso" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="InsertQueryNivelesAcceso">
                 <InsertCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>INSERT INTO [dbo].[NivelesAcceso] ([NombreAcceso]) VALUES (@NombreAcceso)</CommandText>
@@ -181,7 +189,7 @@ SELECT IdAcceso, NombreAcceso FROM NivelesAcceso WHERE (IdAcceso = @IdAcceso)</C
                   </DbCommand>
                 </InsertCommand>
               </DbSource>
-              <DbSource ConnectionRef="PaintingStoreDatabaseConnectionString" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="UpdateQueryNivelesAcceso" Modifier="Public" Name="UpdateQueryNivelesAcceso" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="UpdateQueryNivelesAcceso">
+              <DbSource ConnectionRef="PaintingStoreDatabaseConnectionString" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="UpdateQueryNivelesAcceso" Modifier="Public" Name="UpdateQueryNivelesAcceso" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="UpdateQueryNivelesAcceso">
                 <UpdateCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>UPDATE [dbo].[NivelesAcceso] SET [NombreAcceso] = @NombreAcceso WHERE [IdAcceso] = @Original_IdAcceso</CommandText>
@@ -251,7 +259,7 @@ SELECT IdProveedor, NombreProveedor, TelefonoProveedor, DireccionProveedor, Cont
               <Mapping SourceColumn="ContactoProveedor" DataSetColumn="ContactoProveedor" />
             </Mappings>
             <Sources>
-              <DbSource ConnectionRef="PaintingStoreDatabaseConnectionString" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="DeleteQueryProveedor" Modifier="Public" Name="DeleteQueryProveedor" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="DeleteQueryProveedor">
+              <DbSource ConnectionRef="PaintingStoreDatabaseConnectionString" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="DeleteQueryProveedor" Modifier="Public" Name="DeleteQueryProveedor" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="DeleteQueryProveedor">
                 <DeleteCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>DELETE FROM [dbo].[Proveedor] WHERE [IdProveedor] = @Original_IdProveedor</CommandText>
@@ -274,7 +282,7 @@ SELECT IdProveedor, NombreProveedor, TelefonoProveedor, DireccionProveedor, Cont
                   </DbCommand>
                 </InsertCommand>
               </DbSource>
-              <DbSource ConnectionRef="PaintingStoreDatabaseConnectionString" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="UpdateQueryProveedor" Modifier="Public" Name="UpdateQueryProveedor" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="UpdateQueryProveedor">
+              <DbSource ConnectionRef="PaintingStoreDatabaseConnectionString" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="UpdateQueryProveedor" Modifier="Public" Name="UpdateQueryProveedor" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="UpdateQueryProveedor">
                 <UpdateCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>UPDATE [dbo].[Proveedor] SET [NombreProveedor] = @NombreProveedor, [TelefonoProveedor] = @TelefonoProveedor, [DireccionProveedor] = @DireccionProveedor, [ContactoProveedor] = @ContactoProveedor WHERE [IdProveedor] = @Original_IdProveedor</CommandText>
@@ -289,6 +297,86 @@ SELECT IdProveedor, NombreProveedor, TelefonoProveedor, DireccionProveedor, Cont
                 </UpdateCommand>
               </DbSource>
             </Sources>
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="EmpleadoTableAdapter" GeneratorDataComponentClassName="EmpleadoTableAdapter" Name="Empleado" UserDataComponentName="EmpleadoTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="PaintingStoreDatabaseConnectionString" DbObjectName="dbo.Empleado" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="true" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <DeleteCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>DELETE FROM [dbo].[Empleado] WHERE (([IdEmpleado] = @Original_IdEmpleado) AND ([UserName] = @Original_UserName) AND ([NombreEmpleado] = @Original_NombreEmpleado) AND ([TelefonoEmpleado] = @Original_TelefonoEmpleado) AND ([FechaNacimiento] = @Original_FechaNacimiento) AND ([DPI] = @Original_DPI) AND ((@IsNull_IdAcceso = 1 AND [IdAcceso] IS NULL) OR ([IdAcceso] = @Original_IdAcceso)))</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_IdEmpleado" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="IdEmpleado" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_UserName" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="UserName" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_NombreEmpleado" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NombreEmpleado" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_TelefonoEmpleado" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="TelefonoEmpleado" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Original_FechaNacimiento" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="FechaNacimiento" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_DPI" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="DPI" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_IdAcceso" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="IdAcceso" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_IdAcceso" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="IdAcceso" SourceColumnNullMapping="false" SourceVersion="Original" />
+                    </Parameters>
+                  </DbCommand>
+                </DeleteCommand>
+                <InsertCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>INSERT INTO [dbo].[Empleado] ([UserName], [PasswordUsuario], [NombreEmpleado], [DireccionEmpleado], [TelefonoEmpleado], [FechaNacimiento], [DPI], [IdAcceso]) VALUES (@UserName, @PasswordUsuario, @NombreEmpleado, @DireccionEmpleado, @TelefonoEmpleado, @FechaNacimiento, @DPI, @IdAcceso);
+SELECT IdEmpleado, UserName, PasswordUsuario, NombreEmpleado, DireccionEmpleado, TelefonoEmpleado, FechaNacimiento, DPI, IdAcceso FROM Empleado WHERE (IdEmpleado = SCOPE_IDENTITY())</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@UserName" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="UserName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@PasswordUsuario" Precision="0" ProviderType="Text" Scale="0" Size="0" SourceColumn="PasswordUsuario" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@NombreEmpleado" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NombreEmpleado" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@DireccionEmpleado" Precision="0" ProviderType="Text" Scale="0" Size="0" SourceColumn="DireccionEmpleado" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@TelefonoEmpleado" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="TelefonoEmpleado" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@FechaNacimiento" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="FechaNacimiento" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@DPI" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="DPI" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IdAcceso" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="IdAcceso" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </InsertCommand>
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT IdEmpleado, UserName, PasswordUsuario, NombreEmpleado, DireccionEmpleado, TelefonoEmpleado, FechaNacimiento, DPI, IdAcceso FROM dbo.Empleado</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+                <UpdateCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>UPDATE [dbo].[Empleado] SET [UserName] = @UserName, [PasswordUsuario] = @PasswordUsuario, [NombreEmpleado] = @NombreEmpleado, [DireccionEmpleado] = @DireccionEmpleado, [TelefonoEmpleado] = @TelefonoEmpleado, [FechaNacimiento] = @FechaNacimiento, [DPI] = @DPI, [IdAcceso] = @IdAcceso WHERE (([IdEmpleado] = @Original_IdEmpleado) AND ([UserName] = @Original_UserName) AND ([NombreEmpleado] = @Original_NombreEmpleado) AND ([TelefonoEmpleado] = @Original_TelefonoEmpleado) AND ([FechaNacimiento] = @Original_FechaNacimiento) AND ([DPI] = @Original_DPI) AND ((@IsNull_IdAcceso = 1 AND [IdAcceso] IS NULL) OR ([IdAcceso] = @Original_IdAcceso)));
+SELECT IdEmpleado, UserName, PasswordUsuario, NombreEmpleado, DireccionEmpleado, TelefonoEmpleado, FechaNacimiento, DPI, IdAcceso FROM Empleado WHERE (IdEmpleado = @IdEmpleado)</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@UserName" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="UserName" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@PasswordUsuario" Precision="0" ProviderType="Text" Scale="0" Size="0" SourceColumn="PasswordUsuario" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@NombreEmpleado" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NombreEmpleado" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@DireccionEmpleado" Precision="0" ProviderType="Text" Scale="0" Size="0" SourceColumn="DireccionEmpleado" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@TelefonoEmpleado" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="TelefonoEmpleado" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@FechaNacimiento" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="FechaNacimiento" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@DPI" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="DPI" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IdAcceso" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="IdAcceso" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_IdEmpleado" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="IdEmpleado" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_UserName" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="UserName" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_NombreEmpleado" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="NombreEmpleado" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_TelefonoEmpleado" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="TelefonoEmpleado" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="DateTime" Direction="Input" ParameterName="@Original_FechaNacimiento" Precision="0" ProviderType="DateTime" Scale="0" Size="0" SourceColumn="FechaNacimiento" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="" DataSourceName="" DbType="AnsiString" Direction="Input" ParameterName="@Original_DPI" Precision="0" ProviderType="VarChar" Scale="0" Size="0" SourceColumn="DPI" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@IsNull_IdAcceso" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="IdAcceso" SourceColumnNullMapping="true" SourceVersion="Original" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DbType="Int32" Direction="Input" ParameterName="@Original_IdAcceso" Precision="0" ProviderType="Int" Scale="0" Size="0" SourceColumn="IdAcceso" SourceColumnNullMapping="false" SourceVersion="Original" />
+                      <Parameter AllowDbNull="false" AutogeneratedName="IdEmpleado" ColumnName="IdEmpleado" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@IdEmpleado" Precision="0" ProviderType="Int" Scale="0" Size="4" SourceColumn="IdEmpleado" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </UpdateCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="IdEmpleado" DataSetColumn="IdEmpleado" />
+              <Mapping SourceColumn="UserName" DataSetColumn="UserName" />
+              <Mapping SourceColumn="PasswordUsuario" DataSetColumn="PasswordUsuario" />
+              <Mapping SourceColumn="NombreEmpleado" DataSetColumn="NombreEmpleado" />
+              <Mapping SourceColumn="DireccionEmpleado" DataSetColumn="DireccionEmpleado" />
+              <Mapping SourceColumn="TelefonoEmpleado" DataSetColumn="TelefonoEmpleado" />
+              <Mapping SourceColumn="FechaNacimiento" DataSetColumn="FechaNacimiento" />
+              <Mapping SourceColumn="DPI" DataSetColumn="DPI" />
+              <Mapping SourceColumn="IdAcceso" DataSetColumn="IdAcceso" />
+            </Mappings>
+            <Sources />
           </TableAdapter>
         </Tables>
         <Sources />
@@ -333,11 +421,11 @@ SELECT IdProveedor, NombreProveedor, TelefonoProveedor, DireccionProveedor, Cont
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="NivelesAcceso" msprop:Generator_RowEvHandlerName="NivelesAccesoRowChangeEventHandler" msprop:Generator_RowDeletedName="NivelesAccesoRowDeleted" msprop:Generator_RowDeletingName="NivelesAccesoRowDeleting" msprop:Generator_RowEvArgName="NivelesAccesoRowChangeEvent" msprop:Generator_TablePropName="NivelesAcceso" msprop:Generator_RowChangedName="NivelesAccesoRowChanged" msprop:Generator_RowChangingName="NivelesAccesoRowChanging" msprop:Generator_TableClassName="NivelesAccesoDataTable" msprop:Generator_RowClassName="NivelesAccesoRow" msprop:Generator_TableVarName="tableNivelesAcceso" msprop:Generator_UserTableName="NivelesAcceso">
+        <xs:element name="NivelesAcceso" msprop:Generator_RowClassName="NivelesAccesoRow" msprop:Generator_RowEvHandlerName="NivelesAccesoRowChangeEventHandler" msprop:Generator_RowDeletedName="NivelesAccesoRowDeleted" msprop:Generator_RowDeletingName="NivelesAccesoRowDeleting" msprop:Generator_RowEvArgName="NivelesAccesoRowChangeEvent" msprop:Generator_TablePropName="NivelesAcceso" msprop:Generator_RowChangedName="NivelesAccesoRowChanged" msprop:Generator_UserTableName="NivelesAcceso" msprop:Generator_RowChangingName="NivelesAccesoRowChanging" msprop:Generator_TableClassName="NivelesAccesoDataTable" msprop:Generator_TableVarName="tableNivelesAcceso">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="IdAcceso" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnPropNameInRow="IdAcceso" msprop:Generator_ColumnPropNameInTable="IdAccesoColumn" msprop:Generator_ColumnVarNameInTable="columnIdAcceso" msprop:Generator_UserColumnName="IdAcceso" type="xs:int" />
-              <xs:element name="NombreAcceso" msprop:Generator_ColumnPropNameInRow="NombreAcceso" msprop:Generator_ColumnPropNameInTable="NombreAccesoColumn" msprop:Generator_ColumnVarNameInTable="columnNombreAcceso" msprop:Generator_UserColumnName="NombreAcceso">
+              <xs:element name="IdAcceso" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="IdAcceso" msprop:Generator_ColumnPropNameInTable="IdAccesoColumn" msprop:Generator_ColumnPropNameInRow="IdAcceso" msprop:Generator_ColumnVarNameInTable="columnIdAcceso" type="xs:int" />
+              <xs:element name="NombreAcceso" msprop:Generator_UserColumnName="NombreAcceso" msprop:Generator_ColumnPropNameInTable="NombreAccesoColumn" msprop:Generator_ColumnPropNameInRow="NombreAcceso" msprop:Generator_ColumnVarNameInTable="columnNombreAcceso">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="100" />
@@ -347,38 +435,89 @@ SELECT IdProveedor, NombreProveedor, TelefonoProveedor, DireccionProveedor, Cont
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Proveedor" msprop:Generator_RowEvHandlerName="ProveedorRowChangeEventHandler" msprop:Generator_RowDeletedName="ProveedorRowDeleted" msprop:Generator_RowDeletingName="ProveedorRowDeleting" msprop:Generator_RowEvArgName="ProveedorRowChangeEvent" msprop:Generator_TablePropName="Proveedor" msprop:Generator_RowChangedName="ProveedorRowChanged" msprop:Generator_RowChangingName="ProveedorRowChanging" msprop:Generator_TableClassName="ProveedorDataTable" msprop:Generator_RowClassName="ProveedorRow" msprop:Generator_TableVarName="tableProveedor" msprop:Generator_UserTableName="Proveedor">
+        <xs:element name="Proveedor" msprop:Generator_RowClassName="ProveedorRow" msprop:Generator_RowEvHandlerName="ProveedorRowChangeEventHandler" msprop:Generator_RowDeletedName="ProveedorRowDeleted" msprop:Generator_RowDeletingName="ProveedorRowDeleting" msprop:Generator_RowEvArgName="ProveedorRowChangeEvent" msprop:Generator_TablePropName="Proveedor" msprop:Generator_RowChangedName="ProveedorRowChanged" msprop:Generator_UserTableName="Proveedor" msprop:Generator_RowChangingName="ProveedorRowChanging" msprop:Generator_TableClassName="ProveedorDataTable" msprop:Generator_TableVarName="tableProveedor">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="IdProveedor" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnPropNameInRow="IdProveedor" msprop:Generator_ColumnPropNameInTable="IdProveedorColumn" msprop:Generator_ColumnVarNameInTable="columnIdProveedor" msprop:Generator_UserColumnName="IdProveedor" type="xs:int" />
-              <xs:element name="NombreProveedor" msprop:Generator_ColumnPropNameInRow="NombreProveedor" msprop:Generator_ColumnPropNameInTable="NombreProveedorColumn" msprop:Generator_ColumnVarNameInTable="columnNombreProveedor" msprop:Generator_UserColumnName="NombreProveedor">
+              <xs:element name="IdProveedor" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="IdProveedor" msprop:Generator_ColumnPropNameInTable="IdProveedorColumn" msprop:Generator_ColumnPropNameInRow="IdProveedor" msprop:Generator_ColumnVarNameInTable="columnIdProveedor" type="xs:int" />
+              <xs:element name="NombreProveedor" msprop:Generator_UserColumnName="NombreProveedor" msprop:Generator_ColumnPropNameInTable="NombreProveedorColumn" msprop:Generator_ColumnPropNameInRow="NombreProveedor" msprop:Generator_ColumnVarNameInTable="columnNombreProveedor">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="400" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="TelefonoProveedor" msprop:Generator_ColumnPropNameInRow="TelefonoProveedor" msprop:Generator_ColumnPropNameInTable="TelefonoProveedorColumn" msprop:Generator_ColumnVarNameInTable="columnTelefonoProveedor" msprop:Generator_UserColumnName="TelefonoProveedor">
+              <xs:element name="TelefonoProveedor" msprop:Generator_UserColumnName="TelefonoProveedor" msprop:Generator_ColumnPropNameInTable="TelefonoProveedorColumn" msprop:Generator_ColumnPropNameInRow="TelefonoProveedor" msprop:Generator_ColumnVarNameInTable="columnTelefonoProveedor">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="200" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="DireccionProveedor" msprop:Generator_ColumnPropNameInRow="DireccionProveedor" msprop:Generator_ColumnPropNameInTable="DireccionProveedorColumn" msprop:Generator_ColumnVarNameInTable="columnDireccionProveedor" msprop:Generator_UserColumnName="DireccionProveedor">
+              <xs:element name="DireccionProveedor" msprop:Generator_UserColumnName="DireccionProveedor" msprop:Generator_ColumnPropNameInTable="DireccionProveedorColumn" msprop:Generator_ColumnPropNameInRow="DireccionProveedor" msprop:Generator_ColumnVarNameInTable="columnDireccionProveedor">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="2147483647" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="ContactoProveedor" msprop:Generator_ColumnPropNameInRow="ContactoProveedor" msprop:Generator_ColumnPropNameInTable="ContactoProveedorColumn" msprop:Generator_ColumnVarNameInTable="columnContactoProveedor" msprop:Generator_UserColumnName="ContactoProveedor">
+              <xs:element name="ContactoProveedor" msprop:Generator_UserColumnName="ContactoProveedor" msprop:Generator_ColumnPropNameInTable="ContactoProveedorColumn" msprop:Generator_ColumnPropNameInRow="ContactoProveedor" msprop:Generator_ColumnVarNameInTable="columnContactoProveedor">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="2147483647" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Empleado" msprop:Generator_RowEvHandlerName="EmpleadoRowChangeEventHandler" msprop:Generator_RowDeletedName="EmpleadoRowDeleted" msprop:Generator_RowDeletingName="EmpleadoRowDeleting" msprop:Generator_RowEvArgName="EmpleadoRowChangeEvent" msprop:Generator_TablePropName="Empleado" msprop:Generator_RowChangedName="EmpleadoRowChanged" msprop:Generator_RowChangingName="EmpleadoRowChanging" msprop:Generator_TableClassName="EmpleadoDataTable" msprop:Generator_RowClassName="EmpleadoRow" msprop:Generator_TableVarName="tableEmpleado" msprop:Generator_UserTableName="Empleado">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="IdEmpleado" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnPropNameInRow="IdEmpleado" msprop:Generator_ColumnPropNameInTable="IdEmpleadoColumn" msprop:Generator_ColumnVarNameInTable="columnIdEmpleado" msprop:Generator_UserColumnName="IdEmpleado" type="xs:int" />
+              <xs:element name="UserName" msprop:Generator_ColumnPropNameInRow="UserName" msprop:Generator_ColumnPropNameInTable="UserNameColumn" msprop:Generator_ColumnVarNameInTable="columnUserName" msprop:Generator_UserColumnName="UserName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="PasswordUsuario" msprop:Generator_ColumnPropNameInRow="PasswordUsuario" msprop:Generator_ColumnPropNameInTable="PasswordUsuarioColumn" msprop:Generator_ColumnVarNameInTable="columnPasswordUsuario" msprop:Generator_UserColumnName="PasswordUsuario">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="NombreEmpleado" msprop:Generator_ColumnPropNameInRow="NombreEmpleado" msprop:Generator_ColumnPropNameInTable="NombreEmpleadoColumn" msprop:Generator_ColumnVarNameInTable="columnNombreEmpleado" msprop:Generator_UserColumnName="NombreEmpleado">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="200" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DireccionEmpleado" msprop:Generator_ColumnPropNameInRow="DireccionEmpleado" msprop:Generator_ColumnPropNameInTable="DireccionEmpleadoColumn" msprop:Generator_ColumnVarNameInTable="columnDireccionEmpleado" msprop:Generator_UserColumnName="DireccionEmpleado">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TelefonoEmpleado" msprop:Generator_ColumnPropNameInRow="TelefonoEmpleado" msprop:Generator_ColumnPropNameInTable="TelefonoEmpleadoColumn" msprop:Generator_ColumnVarNameInTable="columnTelefonoEmpleado" msprop:Generator_UserColumnName="TelefonoEmpleado">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="FechaNacimiento" msprop:Generator_ColumnPropNameInRow="FechaNacimiento" msprop:Generator_ColumnPropNameInTable="FechaNacimientoColumn" msprop:Generator_ColumnVarNameInTable="columnFechaNacimiento" msprop:Generator_UserColumnName="FechaNacimiento" type="xs:dateTime" />
+              <xs:element name="DPI" msprop:Generator_ColumnPropNameInRow="DPI" msprop:Generator_ColumnPropNameInTable="DPIColumn" msprop:Generator_ColumnVarNameInTable="columnDPI" msprop:Generator_UserColumnName="DPI">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="75" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IdAcceso" msprop:Generator_ColumnPropNameInRow="IdAcceso" msprop:Generator_ColumnPropNameInTable="IdAccesoColumn" msprop:Generator_ColumnVarNameInTable="columnIdAcceso" msprop:Generator_UserColumnName="IdAcceso" type="xs:int" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
@@ -396,5 +535,14 @@ SELECT IdProveedor, NombreProveedor, TelefonoProveedor, DireccionProveedor, Cont
       <xs:selector xpath=".//mstns:Proveedor" />
       <xs:field xpath="mstns:IdProveedor" />
     </xs:unique>
+    <xs:unique name="Empleado_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Empleado" />
+      <xs:field xpath="mstns:IdEmpleado" />
+    </xs:unique>
   </xs:element>
+  <xs:annotation>
+    <xs:appinfo>
+      <msdata:Relationship name="Relationship6" msdata:parent="NivelesAcceso" msdata:child="Empleado" msdata:parentkey="IdAcceso" msdata:childkey="IdAcceso" msprop:Generator_UserParentTable="NivelesAcceso" msprop:Generator_UserChildTable="Empleado" msprop:Generator_RelationVarName="relationRelationship6" msprop:Generator_ChildPropName="GetEmpleadoRows" msprop:Generator_ParentPropName="NivelesAccesoRow" msprop:Generator_UserRelationName="Relationship6" />
+    </xs:appinfo>
+  </xs:annotation>
 </xs:schema>
