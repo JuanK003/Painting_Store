@@ -21,6 +21,9 @@ namespace DisenioInterfacesBD2
             {
                 Form2 form = new Form2();
                 form.ShowDialog();
+
+                textBoxUser.Text = "";
+                textBoxPassword.Text = "";
             }
             else
             {
@@ -28,6 +31,9 @@ namespace DisenioInterfacesBD2
                 {
                     Form3 form = new Form3();
                     form.ShowDialog();
+
+                    textBoxUser.Text = "";
+                    textBoxPassword.Text = "";
                 }
                 else
                 {
@@ -35,6 +41,9 @@ namespace DisenioInterfacesBD2
                     {
                         Form4 form = new Form4();
                         form.ShowDialog();
+
+                        textBoxUser.Text = "";
+                        textBoxPassword.Text = "";
                     }
                     else
                     {
@@ -42,6 +51,9 @@ namespace DisenioInterfacesBD2
                         {
                             Form5 form = new Form5();
                             form.ShowDialog();
+
+                            textBoxUser.Text = "";
+                            textBoxPassword.Text = "";
                         }
                         else
                         {
