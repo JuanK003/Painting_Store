@@ -39,6 +39,30 @@ namespace BLL
             }
         }
 
+        public string ActualizarCliente(int id, string nombre, string direccion, string telefono, string nit)
+        {
+            try
+            {
+                _clientes.UpdateQueryCliente(nombre, direccion, telefono, nit, id);
+                return "INFO: Cliente actualizado con exito!";
+            }
+            catch (Exception error)
+            {
+                return "ERROR: " + error.Message;
+            }
+        }
 
+        public string EliminarCliente(int id)
+        {
+            try
+            {
+                _clientes.DeleteQueryCliente(id);
+                return "INFO: Cliente eliminado con exito!";
+            }
+            catch (Exception error)
+            {
+                return "ERROR: " + error.Message;
+            }
+        }
     }
 }
