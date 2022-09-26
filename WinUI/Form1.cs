@@ -9,7 +9,7 @@ namespace DisenioInterfacesBD2
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form7 form = new Form7();
+            Form8 form = new Form8();
             form.ShowDialog();
         }
     }

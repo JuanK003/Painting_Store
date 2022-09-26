@@ -114,7 +114,7 @@ namespace DisenioInterfacesBD2
             }
             else
             {
-                messageManager.Show(this, "ERROR: No se ha seleccionado algun item para editarlo!");
+                messageManager.Show(this, "ERROR: No se ha seleccionado algun item para eliminar!");
             }
         }
     }

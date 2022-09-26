@@ -40,6 +40,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -51,6 +52,7 @@
             this.button2.TabIndex = 52;
             this.button2.Text = "Editar";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -60,10 +62,11 @@
             this.button1.TabIndex = 51;
             this.button1.Text = "Nuevo";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(864, 170);
+            this.textBox7.Location = new System.Drawing.Point(864, 199);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(275, 23);
             this.textBox7.TabIndex = 50;
@@ -79,7 +82,7 @@
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(864, 141);
+            this.textBox5.Location = new System.Drawing.Point(864, 170);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(275, 23);
             this.textBox5.TabIndex = 48;
@@ -95,7 +98,7 @@
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(864, 199);
+            this.textBox4.Location = new System.Drawing.Point(864, 140);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(275, 23);
             this.textBox4.TabIndex = 46;
@@ -143,11 +146,22 @@
             this.label1.TabIndex = 41;
             this.label1.Text = "Proveedores";
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(864, 313);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(275, 23);
+            this.button3.TabIndex = 53;
+            this.button3.Text = "Eliminar";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
             // Form8
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1168, 407);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox7);
@@ -162,6 +176,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Form8";
             this.Text = "Form8";
+            this.Load += new System.EventHandler(this.Form8_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -182,5 +197,6 @@
         private Label label4;
         private DataGridView dataGridView1;
         private Label label1;
+        private Button button3;
     }
 }

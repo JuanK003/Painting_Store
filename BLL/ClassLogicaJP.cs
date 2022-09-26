@@ -6,12 +6,59 @@ namespace BLL
     public class ClassLogicaJP
     {
         private ClienteTableAdapter _clientes;
-
+        private ProveedorTableAdapter _proveedores;
         public ClassLogicaJP()
         {
             _clientes = new ClienteTableAdapter();
+            _proveedores = new ProveedorTableAdapter();
         }
 
+        // Tabla Proveedores
+        public DataTable ListarProveedores()
+        {
+            return _proveedores.GetData();
+        }
+
+        public string NuevoProveedor(string nombre, string telefono, string direccion, string contacto)
+        {
+            try
+            {
+                _proveedores.InsertQueryProveedor(nombre, telefono, direccion, contacto);
+                return "INFO: Se ha guardado el nuevo proveedor de forma exitosa!";
+            }
+            catch (Exception error)
+            {
+                return "ERROR: " + error.Message;
+            }
+        }
+
+        public string ActualizarProveedor(int id, string nombre, string telefono, string direccion, string contacto)
+        {
+            try
+            {
+                _proveedores.UpdateQueryProveedor(nombre, telefono, direccion, contacto, id);
+                return "INFO: Proveedor actualizado con exito!";
+            }
+            catch (Exception error)
+            {
+                return "ERROR: " + error.Message;
+            }
+        }
+
+        public string EliminarProveedor(int id)
+        {
+            try
+            {
+                _proveedores.DeleteQueryProveedor(id);
+                return "INFO: Proveedor eliminado con exito!";
+            }
+            catch (Exception error)
+            {
+                return "ERROR: " + error.Message;
+            }
+        }
+
+        // Tabla Clientes
         public DataTable Listar()
         {
             return _clientes.GetData();
