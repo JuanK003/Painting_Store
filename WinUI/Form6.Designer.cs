@@ -48,6 +48,7 @@
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
@@ -180,9 +181,9 @@
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(608, 245);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(88, 15);
+            this.label9.Size = new System.Drawing.Size(103, 15);
             this.label9.TabIndex = 16;
-            this.label9.Text = "Tipo de acceso:";
+            this.label9.Text = "Niveles de acceso:";
             // 
             // dataGridView2
             // 
@@ -204,25 +205,38 @@
             // 
             this.button1.Location = new System.Drawing.Point(608, 467);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(275, 23);
+            this.button1.Size = new System.Drawing.Size(196, 23);
             this.button1.TabIndex = 19;
             this.button1.Text = "Nuevo";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(889, 467);
+            this.button2.Location = new System.Drawing.Point(811, 467);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(237, 23);
+            this.button2.Size = new System.Drawing.Size(168, 23);
             this.button2.TabIndex = 20;
             this.button2.Text = "Editar";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(985, 467);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(143, 23);
+            this.button3.TabIndex = 21;
+            this.button3.Text = "Eliminar";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // Form6
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1140, 502);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dateTimePicker1);
@@ -245,6 +259,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Form6";
             this.Text = "Form6";
+            this.Load += new System.EventHandler(this.Form6_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
@@ -274,5 +289,6 @@
         private DateTimePicker dateTimePicker1;
         private Button button1;
         private Button button2;
+        private Button button3;
     }
 }

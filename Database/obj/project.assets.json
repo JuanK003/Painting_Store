@@ -13,11 +13,19 @@
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\Acer\\Source\\Repos\\Painting_Store\\Database\\Database.csproj",
       "projectName": "Database",
       "projectPath": "C:\\Users\\Acer\\Source\\Repos\\Painting_Store\\Database\\Database.csproj",
       "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Acer\\Source\\Repos\\Painting_Store\\Database\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\juanp\\source\\repos\\Painting_Store\\Database\\Database.csproj",
+      "projectName": "Database",
+      "projectPath": "C:\\Users\\juanp\\source\\repos\\Painting_Store\\Database\\Database.csproj",
+      "packagesPath": "C:\\Users\\juanp\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\juanp\\source\\repos\\Painting_Store\\Database\\obj\\",
+>>>>>>> origin/pruebacrudclientes
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Acer\\AppData\\Roaming\\NuGet\\NuGet.Config",

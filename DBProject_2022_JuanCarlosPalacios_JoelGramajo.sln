@@ -11,8 +11,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DAL", "DAL\DAL.csproj", "{E
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Database", "Database\Database.csproj", "{4B141856-D989-446D-A4E9-E3BC4BE70204}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MessageManager", "MessageManager\MessageManager.csproj", "{6606DE2B-56A5-4B7E-A8FE-6681A1FD3035}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,10 +33,6 @@ Global
 		{4B141856-D989-446D-A4E9-E3BC4BE70204}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4B141856-D989-446D-A4E9-E3BC4BE70204}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4B141856-D989-446D-A4E9-E3BC4BE70204}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6606DE2B-56A5-4B7E-A8FE-6681A1FD3035}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6606DE2B-56A5-4B7E-A8FE-6681A1FD3035}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6606DE2B-56A5-4B7E-A8FE-6681A1FD3035}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6606DE2B-56A5-4B7E-A8FE-6681A1FD3035}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

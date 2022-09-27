@@ -34,11 +34,16 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
+<<<<<<< HEAD
+=======
+            this.button3 = new System.Windows.Forms.Button();
+>>>>>>> origin/pruebacrudclientes
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // button2
             // 
+<<<<<<< HEAD
             this.button2.Location = new System.Drawing.Point(751, 216);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(275, 23);
@@ -54,35 +59,79 @@
             this.button1.TabIndex = 77;
             this.button1.Text = "Nuevo";
             this.button1.UseVisualStyleBackColor = true;
+=======
+            this.button2.Location = new System.Drawing.Point(858, 288);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(314, 31);
+            this.button2.TabIndex = 78;
+            this.button2.Text = "Editar";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(858, 237);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(314, 31);
+            this.button1.TabIndex = 77;
+            this.button1.Text = "Nuevo";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+>>>>>>> origin/pruebacrudclientes
             // 
             // label6
             // 
             this.label6.AutoSize = true;
+<<<<<<< HEAD
             this.label6.Location = new System.Drawing.Point(654, 130);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(210, 15);
+=======
+            this.label6.Location = new System.Drawing.Point(747, 173);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(266, 20);
+>>>>>>> origin/pruebacrudclientes
             this.label6.TabIndex = 76;
             this.label6.Text = "Nombre de la aplicación del producto:";
             // 
             // textBox3
             // 
+<<<<<<< HEAD
             this.textBox3.Location = new System.Drawing.Point(870, 127);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(275, 23);
+=======
+            this.textBox3.Location = new System.Drawing.Point(1019, 166);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(314, 27);
+>>>>>>> origin/pruebacrudclientes
             this.textBox3.TabIndex = 75;
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+<<<<<<< HEAD
             this.dataGridView1.Location = new System.Drawing.Point(-27, 23);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 25;
             this.dataGridView1.Size = new System.Drawing.Size(675, 358);
+=======
+            this.dataGridView1.Location = new System.Drawing.Point(-31, 31);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 25;
+            this.dataGridView1.Size = new System.Drawing.Size(771, 477);
+>>>>>>> origin/pruebacrudclientes
             this.dataGridView1.TabIndex = 74;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+<<<<<<< HEAD
             this.label1.Location = new System.Drawing.Point(12, 5);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(137, 15);
@@ -94,14 +143,46 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1157, 386);
+=======
+            this.label1.Location = new System.Drawing.Point(14, 7);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(171, 20);
+            this.label1.TabIndex = 73;
+            this.label1.Text = "Aplicación del Producto.";
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(858, 341);
+            this.button3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(314, 31);
+            this.button3.TabIndex = 79;
+            this.button3.Text = "Eliminar";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // Form11
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1355, 515);
+            this.Controls.Add(this.button3);
+>>>>>>> origin/pruebacrudclientes
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
+<<<<<<< HEAD
             this.Name = "Form11";
             this.Text = "Form11";
+=======
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.Name = "Form11";
+            this.Text = "Form11";
+            this.Load += new System.EventHandler(this.Form11_Load);
+>>>>>>> origin/pruebacrudclientes
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -116,5 +197,9 @@
         private TextBox textBox3;
         private DataGridView dataGridView1;
         private Label label1;
+<<<<<<< HEAD
+=======
+        private Button button3;
+>>>>>>> origin/pruebacrudclientes
     }
 }
