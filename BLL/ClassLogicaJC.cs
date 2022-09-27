@@ -21,6 +21,11 @@ namespace BLL
             _metodoPago = new MetodoPagoTableAdapter();
             _marca = new MarcaProductoTableAdapter();
             _aplicacionProducto = new AplicacionProductoTableAdapter();
+
+            _presentacionProducto.Connection.ConnectionString = "Data Source = (LocalDB)\\MSSQLLocalDB; AttachDbFilename = " + Environment.CurrentDirectory.Split("WinUI")[0] + "Database\\PaintingStoreDatabase.mdf; Integrated Security = True";
+            _metodoPago.Connection.ConnectionString = "Data Source = (LocalDB)\\MSSQLLocalDB; AttachDbFilename = " + Environment.CurrentDirectory.Split("WinUI")[0] + "Database\\PaintingStoreDatabase.mdf; Integrated Security = True";
+            _marca.Connection.ConnectionString = "Data Source = (LocalDB)\\MSSQLLocalDB; AttachDbFilename = " + Environment.CurrentDirectory.Split("WinUI")[0] + "Database\\PaintingStoreDatabase.mdf; Integrated Security = True";
+            _aplicacionProducto.Connection.ConnectionString = "Data Source = (LocalDB)\\MSSQLLocalDB; AttachDbFilename = " + Environment.CurrentDirectory.Split("WinUI")[0] + "Database\\PaintingStoreDatabase.mdf; Integrated Security = True";
         }
 
         //-------------------------------------- CRUD PRESENTACIÓN PRODUCTO --------------------------------------

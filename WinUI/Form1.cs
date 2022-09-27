@@ -1,5 +1,8 @@
 using BLL;
 using MessageManager;
+using Microsoft.VisualBasic.ApplicationServices;
+using System.Configuration;
+using System.Runtime.ConstrainedExecution;
 using System.Windows.Forms;
 
 namespace DisenioInterfacesBD2
@@ -66,9 +69,7 @@ namespace DisenioInterfacesBD2
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            //MessageBox.Show(Environment.CurrentDirectory);
-            // La linea se ejecuta si los niveles de acceso no estan disponibles
-            // classLogicaJP.restoreNivelesAcceso();
+
         }
     }
 }

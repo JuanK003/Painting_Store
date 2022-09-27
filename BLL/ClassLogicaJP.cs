@@ -1,6 +1,7 @@
 ﻿using DAL.DataSetPSTableAdapters;
 using System.ComponentModel;
 using System.Data;
+using System.Runtime.ConstrainedExecution;
 
 namespace BLL
 {
@@ -17,6 +18,17 @@ namespace BLL
             _proveedores = new ProveedorTableAdapter();
             _nivelesacceso = new NivelesAccesoTableAdapter();
             _empleados = new EmpleadoTableAdapter();
+
+            // cadenas de conexion dinamicas
+            _clientes.Connection.ConnectionString = "Data Source = (LocalDB)\\MSSQLLocalDB; AttachDbFilename = " + Environment.CurrentDirectory.Split("WinUI")[0] + "Database\\PaintingStoreDatabase.mdf; Integrated Security = True";
+            _proveedores.Connection.ConnectionString = "Data Source = (LocalDB)\\MSSQLLocalDB; AttachDbFilename = " + Environment.CurrentDirectory.Split("WinUI")[0] + "Database\\PaintingStoreDatabase.mdf; Integrated Security = True";
+            _nivelesacceso.Connection.ConnectionString = "Data Source = (LocalDB)\\MSSQLLocalDB; AttachDbFilename = " + Environment.CurrentDirectory.Split("WinUI")[0] + "Database\\PaintingStoreDatabase.mdf; Integrated Security = True";
+            _empleados.Connection.ConnectionString = "Data Source = (LocalDB)\\MSSQLLocalDB; AttachDbFilename = " + Environment.CurrentDirectory.Split("WinUI")[0] + "Database\\PaintingStoreDatabase.mdf; Integrated Security = True";            
+        }
+
+        public string get_conn()
+        {
+            return _empleados.Connection.ConnectionString;
         }
 
         // Tabla Empleados

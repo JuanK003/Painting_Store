@@ -4,7 +4,7 @@
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
       <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
         <Connections>
-          <Connection ConnectionStringObject="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Acer\source\repos\Painting_Store\Database\PaintingStoreDatabase.mdf;Integrated Security=True" IsAppSettingsProperty="false" Modifier="Assembly" Name="PaintingStoreDatabaseConnectionString" ParameterPrefix="@" Provider="System.Data.SqlClient" />
+          <Connection ConnectionStringObject="Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Acer\source\repos\Painting_Store\Database\PaintingStoreDatabase.mdf;Integrated Security=True" IsAppSettingsProperty="false" Modifier="Public" Name="PaintingStoreDatabaseConnectionString" ParameterPrefix="@" Provider="System.Data.SqlClient" />
         </Connections>
         <Tables>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ClienteTableAdapter" GeneratorDataComponentClassName="ClienteTableAdapter" Name="Cliente" UserDataComponentName="ClienteTableAdapter">
@@ -89,7 +89,7 @@ SELECT IdCliente, NombreCliente, DireccionCliente, TelefonoCliente, NIT FROM Cli
                   </DbCommand>
                 </InsertCommand>
               </DbSource>
-              <DbSource ConnectionRef="PaintingStoreDatabaseConnectionString" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="ScalarQueryExistsNIT" Modifier="Public" Name="ScalarQueryExistsNIT" QueryType="Scalar" ScalarCallRetval="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="ScalarQueryExistsNIT">
+              <DbSource ConnectionRef="PaintingStoreDatabaseConnectionString" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="ScalarQueryExistsNIT" Modifier="Public" Name="ScalarQueryExistsNIT" QueryType="Scalar" ScalarCallRetval="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="ScalarQueryExistsNIT">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT COUNT(*) FROM Cliente WHERE NIT like @NIT</CommandText>
@@ -293,7 +293,7 @@ SELECT IdProveedor, NombreProveedor, TelefonoProveedor, DireccionProveedor, Cont
                   </DbCommand>
                 </InsertCommand>
               </DbSource>
-              <DbSource ConnectionRef="PaintingStoreDatabaseConnectionString" DbObjectName="[C:\USERS\ACER\SOURCE\REPOS\PAINTING_STORE\DATABASE\PAINTINGSTOREDATABASE.MDF].dbo.ScalarQueryNumeroProveedores" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="ScalarQueryNumeroProveedores" Modifier="Public" Name="ScalarQueryNumeroProveedores" QueryType="Scalar" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy3" UserSourceName="ScalarQueryNumeroProveedores">
+              <DbSource ConnectionRef="PaintingStoreDatabaseConnectionString" DbObjectName="[C:\USERS\ACER\SOURCE\REPOS\PAINTING_STORE\DATABASE\PAINTINGSTOREDATABASE.MDF].dbo.ScalarQueryNumeroProveedores" DbObjectType="StoredProcedure" GenerateShortCommands="true" GeneratorSourceName="ScalarQueryNumeroProveedores" Modifier="Public" Name="ScalarQueryNumeroProveedores" QueryType="Scalar" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="ScalarQueryNumeroProveedores">
                 <SelectCommand>
                   <DbCommand CommandType="StoredProcedure" ModifiedByUser="true">
                     <CommandText>ScalarQueryNumeroProveedores</CommandText>
@@ -303,7 +303,7 @@ SELECT IdProveedor, NombreProveedor, TelefonoProveedor, DireccionProveedor, Cont
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
-              <DbSource ConnectionRef="PaintingStoreDatabaseConnectionString" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="UpdateQueryProveedor" Modifier="Public" Name="UpdateQueryProveedor" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="UpdateQueryProveedor">
+              <DbSource ConnectionRef="PaintingStoreDatabaseConnectionString" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="UpdateQueryProveedor" Modifier="Public" Name="UpdateQueryProveedor" QueryType="NoData" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy3" UserSourceName="UpdateQueryProveedor">
                 <UpdateCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>UPDATE [dbo].[Proveedor] SET [NombreProveedor] = @NombreProveedor, [TelefonoProveedor] = @TelefonoProveedor, [DireccionProveedor] = @DireccionProveedor, [ContactoProveedor] = @ContactoProveedor WHERE [IdProveedor] = @Original_IdProveedor</CommandText>
@@ -442,7 +442,7 @@ VALUES        (@UserName, CONVERT(VARCHAR(1000), HASHBYTES('SHA2_256',@PasswordU
                   </DbCommand>
                 </SelectCommand>
               </DbSource>
-              <DbSource ConnectionRef="PaintingStoreDatabaseConnectionString" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="ScalarQueryCheckUsernameAvailable" Modifier="Public" Name="ScalarQueryCheckUsernameAvailable" QueryType="Scalar" ScalarCallRetval="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="ScalarQueryCheckUsernameAvailable">
+              <DbSource ConnectionRef="PaintingStoreDatabaseConnectionString" DbObjectName="" DbObjectType="Unknown" GenerateShortCommands="true" GeneratorSourceName="ScalarQueryCheckUsernameAvailable" Modifier="Public" Name="ScalarQueryCheckUsernameAvailable" QueryType="Scalar" ScalarCallRetval="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="ScalarQueryCheckUsernameAvailable">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT COUNT(*) FROM Empleado WHERE [UserName] like @username</CommandText>
@@ -970,12 +970,12 @@ SELECT IdAplicacion, NombreAplicacion FROM AplicacionProducto WHERE (IdAplicacio
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="PresentacionProducto" msprop:Generator_RowClassName="PresentacionProductoRow" msprop:Generator_RowEvHandlerName="PresentacionProductoRowChangeEventHandler" msprop:Generator_RowDeletedName="PresentacionProductoRowDeleted" msprop:Generator_RowDeletingName="PresentacionProductoRowDeleting" msprop:Generator_RowEvArgName="PresentacionProductoRowChangeEvent" msprop:Generator_TablePropName="PresentacionProducto" msprop:Generator_RowChangedName="PresentacionProductoRowChanged" msprop:Generator_UserTableName="PresentacionProducto" msprop:Generator_RowChangingName="PresentacionProductoRowChanging" msprop:Generator_TableClassName="PresentacionProductoDataTable" msprop:Generator_TableVarName="tablePresentacionProducto">
+        <xs:element name="PresentacionProducto" msprop:Generator_RowEvHandlerName="PresentacionProductoRowChangeEventHandler" msprop:Generator_RowDeletedName="PresentacionProductoRowDeleted" msprop:Generator_RowDeletingName="PresentacionProductoRowDeleting" msprop:Generator_RowEvArgName="PresentacionProductoRowChangeEvent" msprop:Generator_TablePropName="PresentacionProducto" msprop:Generator_RowChangedName="PresentacionProductoRowChanged" msprop:Generator_UserTableName="PresentacionProducto" msprop:Generator_RowChangingName="PresentacionProductoRowChanging" msprop:Generator_RowClassName="PresentacionProductoRow" msprop:Generator_TableClassName="PresentacionProductoDataTable" msprop:Generator_TableVarName="tablePresentacionProducto">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="IdPresentacionProducto" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="IdPresentacionProducto" msprop:Generator_ColumnPropNameInTable="IdPresentacionProductoColumn" msprop:Generator_ColumnPropNameInRow="IdPresentacionProducto" msprop:Generator_ColumnVarNameInTable="columnIdPresentacionProducto" type="xs:int" />
-              <xs:element name="MedidaPresentacion" msprop:Generator_UserColumnName="MedidaPresentacion" msprop:Generator_ColumnPropNameInTable="MedidaPresentacionColumn" msprop:Generator_ColumnPropNameInRow="MedidaPresentacion" msprop:Generator_ColumnVarNameInTable="columnMedidaPresentacion" type="xs:double" />
-              <xs:element name="NombrePresentacion" msprop:Generator_UserColumnName="NombrePresentacion" msprop:Generator_ColumnPropNameInTable="NombrePresentacionColumn" msprop:Generator_ColumnPropNameInRow="NombrePresentacion" msprop:Generator_ColumnVarNameInTable="columnNombrePresentacion">
+              <xs:element name="IdPresentacionProducto" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnPropNameInTable="IdPresentacionProductoColumn" msprop:Generator_ColumnPropNameInRow="IdPresentacionProducto" msprop:Generator_UserColumnName="IdPresentacionProducto" msprop:Generator_ColumnVarNameInTable="columnIdPresentacionProducto" type="xs:int" />
+              <xs:element name="MedidaPresentacion" msprop:Generator_ColumnPropNameInTable="MedidaPresentacionColumn" msprop:Generator_ColumnPropNameInRow="MedidaPresentacion" msprop:Generator_UserColumnName="MedidaPresentacion" msprop:Generator_ColumnVarNameInTable="columnMedidaPresentacion" type="xs:double" />
+              <xs:element name="NombrePresentacion" msprop:Generator_ColumnPropNameInTable="NombrePresentacionColumn" msprop:Generator_ColumnPropNameInRow="NombrePresentacion" msprop:Generator_UserColumnName="NombrePresentacion" msprop:Generator_ColumnVarNameInTable="columnNombrePresentacion">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="250" />
@@ -985,11 +985,11 @@ SELECT IdAplicacion, NombreAplicacion FROM AplicacionProducto WHERE (IdAplicacio
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="MetodoPago" msprop:Generator_RowClassName="MetodoPagoRow" msprop:Generator_RowEvHandlerName="MetodoPagoRowChangeEventHandler" msprop:Generator_RowDeletedName="MetodoPagoRowDeleted" msprop:Generator_RowDeletingName="MetodoPagoRowDeleting" msprop:Generator_RowEvArgName="MetodoPagoRowChangeEvent" msprop:Generator_TablePropName="MetodoPago" msprop:Generator_RowChangedName="MetodoPagoRowChanged" msprop:Generator_UserTableName="MetodoPago" msprop:Generator_RowChangingName="MetodoPagoRowChanging" msprop:Generator_TableClassName="MetodoPagoDataTable" msprop:Generator_TableVarName="tableMetodoPago">
+        <xs:element name="MetodoPago" msprop:Generator_RowEvHandlerName="MetodoPagoRowChangeEventHandler" msprop:Generator_RowDeletedName="MetodoPagoRowDeleted" msprop:Generator_RowDeletingName="MetodoPagoRowDeleting" msprop:Generator_RowEvArgName="MetodoPagoRowChangeEvent" msprop:Generator_TablePropName="MetodoPago" msprop:Generator_RowChangedName="MetodoPagoRowChanged" msprop:Generator_UserTableName="MetodoPago" msprop:Generator_RowChangingName="MetodoPagoRowChanging" msprop:Generator_RowClassName="MetodoPagoRow" msprop:Generator_TableClassName="MetodoPagoDataTable" msprop:Generator_TableVarName="tableMetodoPago">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="IdMetodoPago" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="IdMetodoPago" msprop:Generator_ColumnPropNameInTable="IdMetodoPagoColumn" msprop:Generator_ColumnPropNameInRow="IdMetodoPago" msprop:Generator_ColumnVarNameInTable="columnIdMetodoPago" type="xs:int" />
-              <xs:element name="NombreMetodoPago" msprop:Generator_UserColumnName="NombreMetodoPago" msprop:Generator_ColumnPropNameInTable="NombreMetodoPagoColumn" msprop:Generator_ColumnPropNameInRow="NombreMetodoPago" msprop:Generator_ColumnVarNameInTable="columnNombreMetodoPago">
+              <xs:element name="IdMetodoPago" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnPropNameInTable="IdMetodoPagoColumn" msprop:Generator_ColumnPropNameInRow="IdMetodoPago" msprop:Generator_UserColumnName="IdMetodoPago" msprop:Generator_ColumnVarNameInTable="columnIdMetodoPago" type="xs:int" />
+              <xs:element name="NombreMetodoPago" msprop:Generator_ColumnPropNameInTable="NombreMetodoPagoColumn" msprop:Generator_ColumnPropNameInRow="NombreMetodoPago" msprop:Generator_UserColumnName="NombreMetodoPago" msprop:Generator_ColumnVarNameInTable="columnNombreMetodoPago">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="100" />
@@ -999,11 +999,11 @@ SELECT IdAplicacion, NombreAplicacion FROM AplicacionProducto WHERE (IdAplicacio
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="MarcaProducto" msprop:Generator_RowClassName="MarcaProductoRow" msprop:Generator_RowEvHandlerName="MarcaProductoRowChangeEventHandler" msprop:Generator_RowDeletedName="MarcaProductoRowDeleted" msprop:Generator_RowDeletingName="MarcaProductoRowDeleting" msprop:Generator_RowEvArgName="MarcaProductoRowChangeEvent" msprop:Generator_TablePropName="MarcaProducto" msprop:Generator_RowChangedName="MarcaProductoRowChanged" msprop:Generator_UserTableName="MarcaProducto" msprop:Generator_RowChangingName="MarcaProductoRowChanging" msprop:Generator_TableClassName="MarcaProductoDataTable" msprop:Generator_TableVarName="tableMarcaProducto">
+        <xs:element name="MarcaProducto" msprop:Generator_RowEvHandlerName="MarcaProductoRowChangeEventHandler" msprop:Generator_RowDeletedName="MarcaProductoRowDeleted" msprop:Generator_RowDeletingName="MarcaProductoRowDeleting" msprop:Generator_RowEvArgName="MarcaProductoRowChangeEvent" msprop:Generator_TablePropName="MarcaProducto" msprop:Generator_RowChangedName="MarcaProductoRowChanged" msprop:Generator_UserTableName="MarcaProducto" msprop:Generator_RowChangingName="MarcaProductoRowChanging" msprop:Generator_RowClassName="MarcaProductoRow" msprop:Generator_TableClassName="MarcaProductoDataTable" msprop:Generator_TableVarName="tableMarcaProducto">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="IdMarca" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="IdMarca" msprop:Generator_ColumnPropNameInTable="IdMarcaColumn" msprop:Generator_ColumnPropNameInRow="IdMarca" msprop:Generator_ColumnVarNameInTable="columnIdMarca" type="xs:int" />
-              <xs:element name="NombreMarca" msprop:Generator_UserColumnName="NombreMarca" msprop:Generator_ColumnPropNameInTable="NombreMarcaColumn" msprop:Generator_ColumnPropNameInRow="NombreMarca" msprop:Generator_ColumnVarNameInTable="columnNombreMarca">
+              <xs:element name="IdMarca" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnPropNameInTable="IdMarcaColumn" msprop:Generator_ColumnPropNameInRow="IdMarca" msprop:Generator_UserColumnName="IdMarca" msprop:Generator_ColumnVarNameInTable="columnIdMarca" type="xs:int" />
+              <xs:element name="NombreMarca" msprop:Generator_ColumnPropNameInTable="NombreMarcaColumn" msprop:Generator_ColumnPropNameInRow="NombreMarca" msprop:Generator_UserColumnName="NombreMarca" msprop:Generator_ColumnVarNameInTable="columnNombreMarca">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="250" />
@@ -1013,11 +1013,11 @@ SELECT IdAplicacion, NombreAplicacion FROM AplicacionProducto WHERE (IdAplicacio
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="AplicacionProducto" msprop:Generator_RowClassName="AplicacionProductoRow" msprop:Generator_RowEvHandlerName="AplicacionProductoRowChangeEventHandler" msprop:Generator_RowDeletedName="AplicacionProductoRowDeleted" msprop:Generator_RowDeletingName="AplicacionProductoRowDeleting" msprop:Generator_RowEvArgName="AplicacionProductoRowChangeEvent" msprop:Generator_TablePropName="AplicacionProducto" msprop:Generator_RowChangedName="AplicacionProductoRowChanged" msprop:Generator_UserTableName="AplicacionProducto" msprop:Generator_RowChangingName="AplicacionProductoRowChanging" msprop:Generator_TableClassName="AplicacionProductoDataTable" msprop:Generator_TableVarName="tableAplicacionProducto">
+        <xs:element name="AplicacionProducto" msprop:Generator_RowEvHandlerName="AplicacionProductoRowChangeEventHandler" msprop:Generator_RowDeletedName="AplicacionProductoRowDeleted" msprop:Generator_RowDeletingName="AplicacionProductoRowDeleting" msprop:Generator_RowEvArgName="AplicacionProductoRowChangeEvent" msprop:Generator_TablePropName="AplicacionProducto" msprop:Generator_RowChangedName="AplicacionProductoRowChanged" msprop:Generator_UserTableName="AplicacionProducto" msprop:Generator_RowChangingName="AplicacionProductoRowChanging" msprop:Generator_RowClassName="AplicacionProductoRow" msprop:Generator_TableClassName="AplicacionProductoDataTable" msprop:Generator_TableVarName="tableAplicacionProducto">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="IdAplicacion" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="IdAplicacion" msprop:Generator_ColumnPropNameInTable="IdAplicacionColumn" msprop:Generator_ColumnPropNameInRow="IdAplicacion" msprop:Generator_ColumnVarNameInTable="columnIdAplicacion" type="xs:int" />
-              <xs:element name="NombreAplicacion" msprop:Generator_UserColumnName="NombreAplicacion" msprop:Generator_ColumnPropNameInTable="NombreAplicacionColumn" msprop:Generator_ColumnPropNameInRow="NombreAplicacion" msprop:Generator_ColumnVarNameInTable="columnNombreAplicacion">
+              <xs:element name="IdAplicacion" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnPropNameInTable="IdAplicacionColumn" msprop:Generator_ColumnPropNameInRow="IdAplicacion" msprop:Generator_UserColumnName="IdAplicacion" msprop:Generator_ColumnVarNameInTable="columnIdAplicacion" type="xs:int" />
+              <xs:element name="NombreAplicacion" msprop:Generator_ColumnPropNameInTable="NombreAplicacionColumn" msprop:Generator_ColumnPropNameInRow="NombreAplicacion" msprop:Generator_UserColumnName="NombreAplicacion" msprop:Generator_ColumnVarNameInTable="columnNombreAplicacion">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="300" />
@@ -1064,7 +1064,7 @@ SELECT IdAplicacion, NombreAplicacion FROM AplicacionProducto WHERE (IdAplicacio
   </xs:element>
   <xs:annotation>
     <xs:appinfo>
-      <msdata:Relationship name="Relationship6" msdata:parent="NivelesAcceso" msdata:child="Empleado" msdata:parentkey="IdAcceso" msdata:childkey="IdAcceso" msprop:Generator_UserParentTable="NivelesAcceso" msprop:Generator_UserChildTable="Empleado" msprop:Generator_RelationVarName="relationRelationship6" msprop:Generator_ChildPropName="GetEmpleadoRows" msprop:Generator_UserRelationName="Relationship6" msprop:Generator_ParentPropName="NivelesAccesoRow" />
+      <msdata:Relationship name="Relationship6" msdata:parent="NivelesAcceso" msdata:child="Empleado" msdata:parentkey="IdAcceso" msdata:childkey="IdAcceso" msprop:Generator_UserParentTable="NivelesAcceso" msprop:Generator_UserChildTable="Empleado" msprop:Generator_RelationVarName="relationRelationship6" msprop:Generator_ChildPropName="GetEmpleadoRows" msprop:Generator_ParentPropName="NivelesAccesoRow" msprop:Generator_UserRelationName="Relationship6" />
     </xs:appinfo>
   </xs:annotation>
 </xs:schema>
