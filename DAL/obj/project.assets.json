@@ -2888,9 +2888,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Acer\\Source\\Repos\\Painting_Store\\DAL\\DAL.csproj",
+      "projectUniqueName": "C:\\Users\\Acer\\source\\repos\\Painting_Store\\DAL\\DAL.csproj",
       "projectName": "DAL",
-      "projectPath": "C:\\Users\\Acer\\Source\\Repos\\Painting_Store\\DAL\\DAL.csproj",
+      "projectPath": "C:\\Users\\Acer\\source\\repos\\Painting_Store\\DAL\\DAL.csproj",
       "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Acer\\Source\\Repos\\Painting_Store\\DAL\\obj\\",
       "projectStyle": "PackageReference",
@@ -2953,13 +2953,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problema al leer el archivo de caché C:\\Users\\Acer\\Source\\Repos\\Painting_Store\\DAL\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }

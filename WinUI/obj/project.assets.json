@@ -2926,11 +2926,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Acer\\Source\\Repos\\Painting_Store\\WinUI\\WinUI.csproj",
+      "projectUniqueName": "C:\\Users\\Acer\\source\\repos\\Painting_Store\\WinUI\\WinUI.csproj",
       "projectName": "WinUI",
-      "projectPath": "C:\\Users\\Acer\\Source\\Repos\\Painting_Store\\WinUI\\WinUI.csproj",
+      "projectPath": "C:\\Users\\Acer\\source\\repos\\Painting_Store\\WinUI\\WinUI.csproj",
       "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Acer\\Source\\Repos\\Painting_Store\\WinUI\\obj\\",
+      "outputPath": "C:\\Users\\Acer\\source\\repos\\Painting_Store\\WinUI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Acer\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2947,8 +2947,8 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "C:\\Users\\Acer\\Source\\Repos\\Painting_Store\\BLL\\BLL.csproj": {
-              "projectPath": "C:\\Users\\Acer\\Source\\Repos\\Painting_Store\\BLL\\BLL.csproj"
+            "C:\\Users\\Acer\\source\\repos\\Painting_Store\\BLL\\BLL.csproj": {
+              "projectPath": "C:\\Users\\Acer\\source\\repos\\Painting_Store\\BLL\\BLL.csproj"
             }
           }
         }
@@ -2990,13 +2990,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problema al leer el archivo de caché C:\\Users\\Acer\\Source\\Repos\\Painting_Store\\WinUI\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }

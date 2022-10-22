@@ -2907,9 +2907,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Acer\\Source\\Repos\\Painting_Store\\BLL\\BLL.csproj",
+      "projectUniqueName": "C:\\Users\\Acer\\source\\repos\\Painting_Store\\BLL\\BLL.csproj",
       "projectName": "BLL",
-      "projectPath": "C:\\Users\\Acer\\Source\\Repos\\Painting_Store\\BLL\\BLL.csproj",
+      "projectPath": "C:\\Users\\Acer\\source\\repos\\Painting_Store\\BLL\\BLL.csproj",
       "packagesPath": "C:\\Users\\Acer\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Acer\\Source\\Repos\\Painting_Store\\BLL\\obj\\",
       "projectStyle": "PackageReference",
@@ -2928,8 +2928,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Acer\\Source\\Repos\\Painting_Store\\DAL\\DAL.csproj": {
-              "projectPath": "C:\\Users\\Acer\\Source\\Repos\\Painting_Store\\DAL\\DAL.csproj"
+            "C:\\Users\\Acer\\source\\repos\\Painting_Store\\DAL\\DAL.csproj": {
+              "projectPath": "C:\\Users\\Acer\\source\\repos\\Painting_Store\\DAL\\DAL.csproj"
             }
           }
         }
@@ -2968,13 +2968,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problema al leer el archivo de caché C:\\Users\\Acer\\Source\\Repos\\Painting_Store\\BLL\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }

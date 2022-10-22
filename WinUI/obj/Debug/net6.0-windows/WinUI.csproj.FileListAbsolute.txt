@@ -107,10 +107,7 @@ C:\Users\Acer\Source\Repos\Painting_Store\WinUI\bin\Debug\net6.0-windows\Microso
 C:\Users\Acer\Source\Repos\Painting_Store\WinUI\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\Acer\Source\Repos\Painting_Store\WinUI\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Tokens.dll
 C:\Users\Acer\Source\Repos\Painting_Store\WinUI\bin\Debug\net6.0-windows\Microsoft.SqlServer.Server.dll
-<<<<<<< HEAD
-=======
 C:\Users\Acer\Source\Repos\Painting_Store\WinUI\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
->>>>>>> origin/pruebacrudclientes
 C:\Users\Acer\Source\Repos\Painting_Store\WinUI\bin\Debug\net6.0-windows\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\Acer\Source\Repos\Painting_Store\WinUI\bin\Debug\net6.0-windows\System.Memory.Data.dll
 C:\Users\Acer\Source\Repos\Painting_Store\WinUI\bin\Debug\net6.0-windows\System.Runtime.Caching.dll
@@ -120,20 +117,16 @@ C:\Users\Acer\Source\Repos\Painting_Store\WinUI\bin\Debug\net6.0-windows\runtime
 C:\Users\Acer\Source\Repos\Painting_Store\WinUI\bin\Debug\net6.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\Acer\Source\Repos\Painting_Store\WinUI\bin\Debug\net6.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
 C:\Users\Acer\Source\Repos\Painting_Store\WinUI\bin\Debug\net6.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-<<<<<<< HEAD
 C:\Users\Acer\Source\Repos\Painting_Store\WinUI\bin\Debug\net6.0-windows\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
-=======
 C:\Users\Acer\Source\Repos\Painting_Store\WinUI\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
 C:\Users\Acer\Source\Repos\Painting_Store\WinUI\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
 C:\Users\Acer\Source\Repos\Painting_Store\WinUI\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
 C:\Users\Acer\Source\Repos\Painting_Store\WinUI\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 C:\Users\Acer\Source\Repos\Painting_Store\WinUI\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
-C:\Users\Acer\Source\Repos\Painting_Store\WinUI\bin\Debug\net6.0-windows\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\Users\Acer\Source\Repos\Painting_Store\WinUI\bin\Debug\net6.0-windows\BLL.dll
 C:\Users\Acer\Source\Repos\Painting_Store\WinUI\bin\Debug\net6.0-windows\DAL.dll
 C:\Users\Acer\Source\Repos\Painting_Store\WinUI\bin\Debug\net6.0-windows\BLL.pdb
 C:\Users\Acer\Source\Repos\Painting_Store\WinUI\bin\Debug\net6.0-windows\DAL.pdb
->>>>>>> origin/pruebacrudclientes
 C:\Users\Acer\Source\Repos\Painting_Store\WinUI\obj\Debug\net6.0-windows\WinUI.csproj.AssemblyReference.cache
 C:\Users\Acer\Source\Repos\Painting_Store\WinUI\obj\Debug\net6.0-windows\DisenioInterfacesBD2.Form1.resources
 C:\Users\Acer\Source\Repos\Painting_Store\WinUI\obj\Debug\net6.0-windows\WinUI.Form10.resources
@@ -159,8 +152,6 @@ C:\Users\Acer\Source\Repos\Painting_Store\WinUI\obj\Debug\net6.0-windows\refint\
 C:\Users\Acer\Source\Repos\Painting_Store\WinUI\obj\Debug\net6.0-windows\WinUI.pdb
 C:\Users\Acer\Source\Repos\Painting_Store\WinUI\obj\Debug\net6.0-windows\WinUI.genruntimeconfig.cache
 C:\Users\Acer\Source\Repos\Painting_Store\WinUI\obj\Debug\net6.0-windows\ref\WinUI.dll
-<<<<<<< HEAD
-=======
 C:\Users\Acer\source\repos\Painting_Store\WinUI\bin\Debug\net6.0-windows\Xceed.Wpf.AvalonDock.NET5.dll
 C:\Users\Acer\source\repos\Painting_Store\WinUI\bin\Debug\net6.0-windows\Xceed.Wpf.AvalonDock.Themes.Aero.NET5.dll
 C:\Users\Acer\source\repos\Painting_Store\WinUI\bin\Debug\net6.0-windows\Xceed.Wpf.AvalonDock.Themes.Metro.NET5.dll
@@ -195,4 +186,3 @@ C:\Users\juanp\source\repos\Painting_Store\WinUI\bin\Debug\net6.0-windows\ro\Xce
 C:\Users\juanp\source\repos\Painting_Store\WinUI\bin\Debug\net6.0-windows\ru\Xceed.Wpf.AvalonDock.NET5.resources.dll
 C:\Users\juanp\source\repos\Painting_Store\WinUI\bin\Debug\net6.0-windows\sv\Xceed.Wpf.AvalonDock.NET5.resources.dll
 C:\Users\juanp\source\repos\Painting_Store\WinUI\bin\Debug\net6.0-windows\zh-Hans\Xceed.Wpf.AvalonDock.NET5.resources.dll
->>>>>>> origin/pruebacrudclientes
