@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\BLL",
+    "\\WinUI"
   ],
-  "SelectedNode": "\\DBProject_2022_JuanCarlosPalacios_JoelGramajo.sln",
+  "SelectedNode": "\\BLL\\ClassLogicaJP.cs",
   "PreviewInSolutionExplorer": false
 }

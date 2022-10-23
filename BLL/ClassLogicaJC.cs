@@ -15,17 +15,26 @@ namespace BLL
         private MetodoPagoTableAdapter _metodoPago;
         private MarcaProductoTableAdapter _marca;
         private AplicacionProductoTableAdapter _aplicacionProducto;
+        private ProductosTableAdapter _productos;
+        private PedidoProductoTableAdapter _pedidoProducto;
+        private EntradaProductoTableAdapter _entradaProducto;
         public ClassLogicaJC()
         {
             _presentacionProducto = new PresentacionProductoTableAdapter();
             _metodoPago = new MetodoPagoTableAdapter();
             _marca = new MarcaProductoTableAdapter();
             _aplicacionProducto = new AplicacionProductoTableAdapter();
+            _productos = new ProductosTableAdapter();
+            _pedidoProducto = new PedidoProductoTableAdapter();
+            _entradaProducto = new EntradaProductoTableAdapter();
 
             _presentacionProducto.Connection.ConnectionString = "Data Source = (LocalDB)\\MSSQLLocalDB; AttachDbFilename = " + Environment.CurrentDirectory.Split("WinUI")[0] + "Database\\PaintingStoreDatabase.mdf; Integrated Security = True";
             _metodoPago.Connection.ConnectionString = "Data Source = (LocalDB)\\MSSQLLocalDB; AttachDbFilename = " + Environment.CurrentDirectory.Split("WinUI")[0] + "Database\\PaintingStoreDatabase.mdf; Integrated Security = True";
             _marca.Connection.ConnectionString = "Data Source = (LocalDB)\\MSSQLLocalDB; AttachDbFilename = " + Environment.CurrentDirectory.Split("WinUI")[0] + "Database\\PaintingStoreDatabase.mdf; Integrated Security = True";
             _aplicacionProducto.Connection.ConnectionString = "Data Source = (LocalDB)\\MSSQLLocalDB; AttachDbFilename = " + Environment.CurrentDirectory.Split("WinUI")[0] + "Database\\PaintingStoreDatabase.mdf; Integrated Security = True";
+            _productos.Connection.ConnectionString = "Data Source = (LocalDB)\\MSSQLLocalDB; AttachDbFilename = " + Environment.CurrentDirectory.Split("WinUI")[0] + "Database\\PaintingStoreDatabase.mdf; Integrated Security = True";
+            _pedidoProducto.Connection.ConnectionString = "Data Source = (LocalDB)\\MSSQLLocalDB; AttachDbFilename = " + Environment.CurrentDirectory.Split("WinUI")[0] + "Database\\PaintingStoreDatabase.mdf; Integrated Security = True";
+            _entradaProducto.Connection.ConnectionString = "Data Source = (LocalDB)\\MSSQLLocalDB; AttachDbFilename = " + Environment.CurrentDirectory.Split("WinUI")[0] + "Database\\PaintingStoreDatabase.mdf; Integrated Security = True";
         }
 
         //-------------------------------------- CRUD PRESENTACIÓN PRODUCTO --------------------------------------
