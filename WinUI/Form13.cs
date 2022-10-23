@@ -18,7 +18,6 @@ namespace WinUI
         ClassLogicaJC logica = new ClassLogicaJC();
         ClassMessageManager messageManager = new ClassMessageManager();
         MyProgramUtils programUtils = new MyProgramUtils();
-
         public Form13()
         {
             InitializeComponent();
