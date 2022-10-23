@@ -59,6 +59,7 @@
             this.textBox6.Location = new System.Drawing.Point(972, 289);
             this.textBox6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox6.Name = "textBox6";
+            this.textBox6.PlaceholderText = "Existencias";
             this.textBox6.Size = new System.Drawing.Size(302, 27);
             this.textBox6.TabIndex = 64;
             // 
@@ -76,6 +77,7 @@
             this.textBox1.Location = new System.Drawing.Point(973, 61);
             this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox1.Name = "textBox1";
+            this.textBox1.PlaceholderText = "Nombre del Producto";
             this.textBox1.Size = new System.Drawing.Size(302, 27);
             this.textBox1.TabIndex = 66;
             // 
@@ -93,6 +95,7 @@
             this.textBox2.Location = new System.Drawing.Point(972, 108);
             this.textBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox2.Name = "textBox2";
+            this.textBox2.PlaceholderText = "Descripción";
             this.textBox2.Size = new System.Drawing.Size(302, 27);
             this.textBox2.TabIndex = 68;
             // 
@@ -110,6 +113,7 @@
             this.textBox3.Location = new System.Drawing.Point(972, 150);
             this.textBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox3.Name = "textBox3";
+            this.textBox3.PlaceholderText = "Precio (0,00)";
             this.textBox3.Size = new System.Drawing.Size(302, 27);
             this.textBox3.TabIndex = 70;
             // 
@@ -127,6 +131,7 @@
             this.textBox4.Location = new System.Drawing.Point(972, 201);
             this.textBox4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox4.Name = "textBox4";
+            this.textBox4.PlaceholderText = "Años";
             this.textBox4.Size = new System.Drawing.Size(302, 27);
             this.textBox4.TabIndex = 72;
             // 
@@ -144,6 +149,7 @@
             this.textBox5.Location = new System.Drawing.Point(972, 246);
             this.textBox5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox5.Name = "textBox5";
+            this.textBox5.PlaceholderText = "Cantidad en bodega";
             this.textBox5.Size = new System.Drawing.Size(302, 27);
             this.textBox5.TabIndex = 74;
             // 

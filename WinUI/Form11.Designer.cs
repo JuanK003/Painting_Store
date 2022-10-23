@@ -74,6 +74,7 @@
             this.textBox3.Location = new System.Drawing.Point(1019, 166);
             this.textBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox3.Name = "textBox3";
+            this.textBox3.PlaceholderText = "Nombre de la aplicación del producto";
             this.textBox3.Size = new System.Drawing.Size(314, 27);
             this.textBox3.TabIndex = 75;
             // 

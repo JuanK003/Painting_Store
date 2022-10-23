@@ -67,6 +67,7 @@
             this.textBox5.Location = new System.Drawing.Point(1027, 212);
             this.textBox5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox5.Name = "textBox5";
+            this.textBox5.PlaceholderText = "Tipo de presentación";
             this.textBox5.Size = new System.Drawing.Size(314, 27);
             this.textBox5.TabIndex = 60;
             // 
@@ -84,6 +85,7 @@
             this.textBox3.Location = new System.Drawing.Point(1027, 164);
             this.textBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox3.Name = "textBox3";
+            this.textBox3.PlaceholderText = "Medida exacta!";
             this.textBox3.Size = new System.Drawing.Size(314, 27);
             this.textBox3.TabIndex = 56;
             // 

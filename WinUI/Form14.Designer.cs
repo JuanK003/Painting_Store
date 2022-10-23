@@ -97,6 +97,7 @@
             this.textBox7.Location = new System.Drawing.Point(908, 63);
             this.textBox7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox7.Name = "textBox7";
+            this.textBox7.PlaceholderText = "Cantidad de pedido del producto";
             this.textBox7.Size = new System.Drawing.Size(302, 27);
             this.textBox7.TabIndex = 62;
             // 
