@@ -127,7 +127,7 @@ namespace BLL
         //-------------------------------------- CRUD MARCA DEL PRODUCTO --------------------------------------
         public DataTable ListarMarca()
         {
-            return _marca.GetData();
+            return _marca.GetDataBy3prueba();
         }
         public string NuevoMarca(string nombreMarca)
         {
@@ -204,6 +204,144 @@ namespace BLL
             {
                 _aplicacionProducto.DeleteQueryAplicacionProducto(id);
                 return "INFO: Aplicación del Producto eliminada de forma exitosa!";
+            }
+            catch (Exception error)
+            {
+                return "ERROR: " + error.Message;
+            }
+        }
+
+        //-------------------------------------- CRUD PRODUCTOS --------------------------------------
+        
+        public DataTable ListarProductos()
+        {
+            return _productos.GetData();
+        }
+
+        public string NuevoProducto(string nombreProducto, string descripcionProducto, decimal precioVenta, int anoDuracion, int cantidadBodega, int existenciaMinima, int marca, int aplicacion, int presentacionProducto)
+        {
+            try
+            {
+                _productos.InsertQueryProductos(nombreProducto, descripcionProducto, precioVenta, anoDuracion, cantidadBodega, existenciaMinima, marca, aplicacion, presentacionProducto);
+                return "INFO: Se ha guardado el Producto de forma exitosa!";
+            }
+            catch (Exception error)
+            {
+                return "ERROR: " + error.Message;
+            }
+        }
+
+        public string ActualizarProducto(int id, string nombreProducto, string descripcionProducto, float precioVenta, int anoDuracion, int cantidadBodega, int existenciaMinima, int marca, int aplicacion, int presentacionProducto)
+        {
+            try
+            {
+                _productos.UpdateQueryProductos(nombreProducto, descripcionProducto, precioVenta, anoDuracion, cantidadBodega, existenciaMinima, marca, aplicacion, presentacionProducto, id);
+                return "INFO: Producto actualizado de forma exitosa!";
+            }
+            catch (Exception error)
+            {
+                return "ERROR: " + error.Message;
+            }
+        }
+
+        public string EliminarProducto(int id)
+        {
+            try
+            {
+                _productos.DeleteQueryProductos(id);
+                return "INFO: Producto eliminado de forma exitosa!";
+            }
+            catch (Exception error)
+            {
+                return "ERROR: " + error.Message;
+            }
+        }
+
+        //-------------------------------------- CRUD PEDIDO DE PRODUCTO --------------------------------------
+
+        public DataTable ListarPedidoProductos()
+        {
+            return _pedidoProducto.GetData();
+        }
+
+        public string NuevoPedidoProducto(int cantidadPedido, DateTime fechaRealizacion, int proveedor, int producto)
+        {
+            try
+            {
+                _pedidoProducto.InsertQueryPedidoProducto(cantidadPedido, fechaRealizacion, proveedor, producto);
+                return "INFO: Se ha guardado el Pedido del Producto de forma exitosa!";
+            }
+            catch (Exception error)
+            {
+                return "ERROR: " + error.Message;
+            }
+        }
+
+        public string ActualizarPedidoProducto(int id, int cantidadPedido, DateTime fechaRealizacion, int proveedor, int producto)
+        {
+            try
+            {
+                _pedidoProducto.UpdateQueryPedidoProducto(cantidadPedido, fechaRealizacion, proveedor, producto, id);
+                return "INFO: Pedido del Producto actualizado de forma exitosa!";
+            }
+            catch (Exception error)
+            {
+                return "ERROR: " + error.Message;
+            }
+        }
+
+        public string EliminarPedidoProducto(int id)
+        {
+            try
+            {
+                _pedidoProducto.DeleteQueryPedidoProducto(id);
+                return "INFO: Pedido del Producto eliminado de forma exitosa!";
+            }
+            catch (Exception error)
+            {
+                return "ERROR: " + error.Message;
+            }
+        }
+
+        //-------------------------------------- CRUD ENTRADA DE PRODUCTOS --------------------------------------
+
+        public DataTable ListarEntradaProductos()
+        {
+            return _entradaProducto.GetData();
+        }
+
+        public string NuevoEntradaProducto(DateTime fechaEntrada, int cantidadEntrada, int pedidoProducto)
+        {
+            try
+            {
+                _entradaProducto.InsertQueryEntradaProductos(fechaEntrada, cantidadEntrada, pedidoProducto);
+                return "INFO: Se ha guardado la Entrada del Producto de forma exitosa!";
+            }
+            catch (Exception error)
+            {
+                return "ERROR: " + error.Message;
+            }
+        }
+
+        public string ActualizarEntradaProducto(int id, DateTime fechaEntrada, int cantidadEntrada, int pedidoProducto)
+        {
+            try
+            {
+                _entradaProducto.UpdateQueryEntradaProductos(fechaEntrada, cantidadEntrada, pedidoProducto, id);
+                return "INFO: Entrada Producto actualizada de forma exitosa!";
+            }
+            catch (Exception error)
+            {
+                return "ERROR: " + error.Message;
+            }
+        }
+
+        public string EliminarEntradaProducto(int id)
+        {
+            try
+            {
+                _entradaProducto.DeleteQueryEntradaProductos(id);
+                return "INFO: Entrada de Producto eliminada de forma exitosa!";
             }
             catch (Exception error)
             {

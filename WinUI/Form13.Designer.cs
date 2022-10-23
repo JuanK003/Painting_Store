@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -54,13 +54,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox7
+            // textBox6
             // 
-            this.textBox7.Location = new System.Drawing.Point(971, 58);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(302, 27);
-            this.textBox7.TabIndex = 64;
+            this.textBox6.Location = new System.Drawing.Point(972, 289);
+            this.textBox6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(302, 27);
+            this.textBox6.TabIndex = 64;
             // 
             // label5
             // 
@@ -73,7 +73,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(972, 105);
+            this.textBox1.Location = new System.Drawing.Point(973, 61);
             this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(302, 27);
@@ -90,7 +90,7 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(972, 153);
+            this.textBox2.Location = new System.Drawing.Point(972, 108);
             this.textBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(302, 27);
@@ -107,7 +107,7 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(972, 198);
+            this.textBox3.Location = new System.Drawing.Point(972, 150);
             this.textBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(302, 27);
@@ -124,7 +124,7 @@
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(972, 243);
+            this.textBox4.Location = new System.Drawing.Point(972, 201);
             this.textBox4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(302, 27);
@@ -141,7 +141,7 @@
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(972, 293);
+            this.textBox5.Location = new System.Drawing.Point(972, 246);
             this.textBox5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(302, 27);
@@ -286,10 +286,11 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox7);
+            this.Controls.Add(this.textBox6);
             this.Controls.Add(this.label5);
             this.Name = "Form13";
             this.Text = "Form13";
+            this.Load += new System.EventHandler(this.Form13_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -298,7 +299,7 @@
 
         #endregion
 
-        private TextBox textBox7;
+        private TextBox textBox6;
         private Label label5;
         private TextBox textBox1;
         private Label label1;

@@ -10527,7 +10527,7 @@ SELECT IdMetodoPago, NombreMetodoPago FROM MetodoPago WHERE (IdMetodoPago = @IdM
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitCommandCollection() {
-            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[4];
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[5];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
             this._commandCollection[0].CommandText = "SELECT IdMarca, NombreMarca FROM dbo.MarcaProducto";
@@ -10539,16 +10539,20 @@ SELECT IdMetodoPago, NombreMetodoPago FROM MetodoPago WHERE (IdMetodoPago = @IdM
             this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_IdMarca", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "IdMarca", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._commandCollection[2] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[2].Connection = this.Connection;
-            this._commandCollection[2].CommandText = "INSERT INTO [dbo].[MarcaProducto] ([NombreMarca]) VALUES (@NombreMarca)";
+            this._commandCollection[2].CommandText = "SELECT IdMarca, NombreMarca FROM dbo.MarcaProducto";
             this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
-            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@NombreMarca", global::System.Data.SqlDbType.VarChar, 250, global::System.Data.ParameterDirection.Input, 0, 0, "NombreMarca", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[3] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[3].Connection = this.Connection;
-            this._commandCollection[3].CommandText = "UPDATE [dbo].[MarcaProducto] SET [NombreMarca] = @NombreMarca WHERE [IdMarca] = @" +
-                "Original_IdMarca";
+            this._commandCollection[3].CommandText = "INSERT INTO [dbo].[MarcaProducto] ([NombreMarca]) VALUES (@NombreMarca)";
             this._commandCollection[3].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@NombreMarca", global::System.Data.SqlDbType.VarChar, 250, global::System.Data.ParameterDirection.Input, 0, 0, "NombreMarca", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[3].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_IdMarca", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "IdMarca", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._commandCollection[4] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[4].Connection = this.Connection;
+            this._commandCollection[4].CommandText = "UPDATE [dbo].[MarcaProducto] SET [NombreMarca] = @NombreMarca WHERE [IdMarca] = @" +
+                "Original_IdMarca";
+            this._commandCollection[4].CommandType = global::System.Data.CommandType.Text;
+            this._commandCollection[4].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@NombreMarca", global::System.Data.SqlDbType.VarChar, 250, global::System.Data.ParameterDirection.Input, 0, 0, "NombreMarca", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[4].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_IdMarca", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "IdMarca", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -10570,6 +10574,17 @@ SELECT IdMetodoPago, NombreMetodoPago FROM MetodoPago WHERE (IdMetodoPago = @IdM
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
         public virtual DataSetPS.MarcaProductoDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
+            DataSetPS.MarcaProductoDataTable dataTable = new DataSetPS.MarcaProductoDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, false)]
+        public virtual DataSetPS.MarcaProductoDataTable GetDataBy3prueba() {
+            this.Adapter.SelectCommand = this.CommandCollection[2];
             DataSetPS.MarcaProductoDataTable dataTable = new DataSetPS.MarcaProductoDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
@@ -10731,7 +10746,7 @@ SELECT IdMetodoPago, NombreMetodoPago FROM MetodoPago WHERE (IdMetodoPago = @IdM
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, false)]
         public virtual int InsertQueryMarca(string NombreMarca) {
-            global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[2];
+            global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[3];
             if ((NombreMarca == null)) {
                 throw new global::System.ArgumentNullException("NombreMarca");
             }
@@ -10760,7 +10775,7 @@ SELECT IdMetodoPago, NombreMetodoPago FROM MetodoPago WHERE (IdMetodoPago = @IdM
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, false)]
         public virtual int UpdateQueryMarca(string NombreMarca, int Original_IdMarca) {
-            global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[3];
+            global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[4];
             if ((NombreMarca == null)) {
                 throw new global::System.ArgumentNullException("NombreMarca");
             }
@@ -13522,11 +13537,11 @@ SELECT IdProducto, NombreProducto, DescripcionProducto, PrecioVenta, AñosDuraci
             this._commandCollection[1].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_IdProducto", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "IdProducto", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._commandCollection[2] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[2].Connection = this.Connection;
-            this._commandCollection[2].CommandText = @"INSERT INTO [dbo].[Productos] ([NombreProducto], [DescripcionProducto], [PrecioVenta], [AñosDuracion], [CantidadEnBodega], [ExistenciaMinima], [IdMarca], [IdAplicacion], [IdPresentacionProducto]) VALUES (@NombreProducto, @DescripcionProducto, @PrecioVenta, @AñosDuracion, @CantidadEnBodega, @ExistenciaMinima, @IdMarca, @IdAplicacion, @IdPresentacionProducto)";
+            this._commandCollection[2].CommandText = @"INSERT INTO [dbo].[Productos] ([NombreProducto], [DescripcionProducto], [PrecioVenta], [AñosDuracion], [CantidadEnBodega], [ExistenciaMinima], [IdMarca], [IdAplicacion], [IdPresentacionProducto]) VALUES (@NombreProducto, @DescripcionProducto, ROUND(@PrecioVenta, 2), @AñosDuracion, @CantidadEnBodega, @ExistenciaMinima, @IdMarca, @IdAplicacion, @IdPresentacionProducto)";
             this._commandCollection[2].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@NombreProducto", global::System.Data.SqlDbType.Text, 2147483647, global::System.Data.ParameterDirection.Input, 0, 0, "NombreProducto", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DescripcionProducto", global::System.Data.SqlDbType.Text, 2147483647, global::System.Data.ParameterDirection.Input, 0, 0, "DescripcionProducto", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PrecioVenta", global::System.Data.SqlDbType.Float, 8, global::System.Data.ParameterDirection.Input, 0, 0, "PrecioVenta", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PrecioVenta", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 0, 0, "", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@AñosDuracion", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "AñosDuracion", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CantidadEnBodega", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "CantidadEnBodega", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._commandCollection[2].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ExistenciaMinima", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "ExistenciaMinima", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
@@ -13863,7 +13878,7 @@ SELECT IdProducto, NombreProducto, DescripcionProducto, PrecioVenta, AñosDuraci
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, false)]
-        public virtual int InsertQueryProductos(string NombreProducto, string DescripcionProducto, double PrecioVenta, int AñosDuracion, int CantidadEnBodega, int ExistenciaMinima, global::System.Nullable<int> IdMarca, global::System.Nullable<int> IdAplicacion, global::System.Nullable<int> IdPresentacionProducto) {
+        public virtual int InsertQueryProductos(string NombreProducto, string DescripcionProducto, decimal PrecioVenta, int AñosDuracion, int CantidadEnBodega, int ExistenciaMinima, global::System.Nullable<int> IdMarca, global::System.Nullable<int> IdAplicacion, global::System.Nullable<int> IdPresentacionProducto) {
             global::System.Data.SqlClient.SqlCommand command = this.CommandCollection[2];
             if ((NombreProducto == null)) {
                 throw new global::System.ArgumentNullException("NombreProducto");
@@ -13877,7 +13892,7 @@ SELECT IdProducto, NombreProducto, DescripcionProducto, PrecioVenta, AñosDuraci
             else {
                 command.Parameters[1].Value = ((string)(DescripcionProducto));
             }
-            command.Parameters[2].Value = ((double)(PrecioVenta));
+            command.Parameters[2].Value = ((decimal)(PrecioVenta));
             command.Parameters[3].Value = ((int)(AñosDuracion));
             command.Parameters[4].Value = ((int)(CantidadEnBodega));
             command.Parameters[5].Value = ((int)(ExistenciaMinima));

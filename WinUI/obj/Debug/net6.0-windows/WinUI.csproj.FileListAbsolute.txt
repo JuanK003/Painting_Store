@@ -183,3 +183,6 @@ C:\Users\juanp\source\repos\Painting_Store\WinUI\bin\Debug\net6.0-windows\ro\Xce
 C:\Users\juanp\source\repos\Painting_Store\WinUI\bin\Debug\net6.0-windows\ru\Xceed.Wpf.AvalonDock.NET5.resources.dll
 C:\Users\juanp\source\repos\Painting_Store\WinUI\bin\Debug\net6.0-windows\sv\Xceed.Wpf.AvalonDock.NET5.resources.dll
 C:\Users\juanp\source\repos\Painting_Store\WinUI\bin\Debug\net6.0-windows\zh-Hans\Xceed.Wpf.AvalonDock.NET5.resources.dll
+C:\Users\Acer\source\repos\Painting_Store\WinUI\obj\Debug\net6.0-windows\WinUI.Form13.resources
+C:\Users\Acer\source\repos\Painting_Store\WinUI\obj\Debug\net6.0-windows\WinUI.Form14.resources
+C:\Users\Acer\source\repos\Painting_Store\WinUI\obj\Debug\net6.0-windows\WinUI.Form15.resources
