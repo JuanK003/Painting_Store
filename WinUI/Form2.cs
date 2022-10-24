@@ -77,5 +77,16 @@ namespace DisenioInterfacesBD2
             Form15 form15 = new Form15();
             form15.ShowDialog();
         }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            Form16 form16 = new Form16();
+            form16.ShowDialog();
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

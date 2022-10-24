@@ -186,3 +186,4 @@ C:\Users\juanp\source\repos\Painting_Store\WinUI\bin\Debug\net6.0-windows\zh-Han
 C:\Users\Acer\source\repos\Painting_Store\WinUI\obj\Debug\net6.0-windows\WinUI.Form13.resources
 C:\Users\Acer\source\repos\Painting_Store\WinUI\obj\Debug\net6.0-windows\WinUI.Form14.resources
 C:\Users\Acer\source\repos\Painting_Store\WinUI\obj\Debug\net6.0-windows\WinUI.Form15.resources
+C:\Users\Acer\source\repos\Painting_Store\WinUI\obj\Debug\net6.0-windows\WinUI.Form16.resources
