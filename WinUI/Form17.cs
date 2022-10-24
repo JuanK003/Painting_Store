@@ -19,14 +19,14 @@ namespace WinUI
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form18 form18 = new Form18();
-            form18.ShowDialog();
+            Form19 form19 = new Form19();
+            form19.ShowDialog();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Form19 form19 = new Form19();
-            form19.ShowDialog();
+            Form18 form18 = new Form18();
+            form18.ShowDialog();
         }
 
         private void button1_Click(object sender, EventArgs e)

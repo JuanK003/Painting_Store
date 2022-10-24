@@ -208,7 +208,7 @@
             // 
             this.button3.Location = new System.Drawing.Point(395, 28);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(105, 49);
+            this.button3.Size = new System.Drawing.Size(105, 57);
             this.button3.TabIndex = 26;
             this.button3.Text = "Buscar Factura.";
             this.button3.UseVisualStyleBackColor = true;
