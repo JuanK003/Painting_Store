@@ -42,6 +42,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.domainUpDown1 = new System.Windows.Forms.DomainUpDown();
+            this.button3 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
@@ -204,11 +205,21 @@
             this.domainUpDown1.TabIndex = 12;
             this.domainUpDown1.Text = "Cantidad";
             // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(499, 98);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(170, 39);
+            this.button3.TabIndex = 13;
+            this.button3.Text = "Imprimir Factura.";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
             // Form16
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(891, 443);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.domainUpDown1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -248,5 +259,6 @@
         private Button button1;
         private Button button2;
         private DomainUpDown domainUpDown1;
+        private Button button3;
     }
 }

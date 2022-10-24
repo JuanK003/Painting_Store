@@ -86,7 +86,8 @@ namespace DisenioInterfacesBD2
 
         private void button12_Click(object sender, EventArgs e)
         {
-
+            Form17 form17 = new Form17();
+            form17.ShowDialog();
         }
     }
 }
