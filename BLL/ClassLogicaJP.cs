@@ -19,6 +19,8 @@ namespace BLL
             _nivelesacceso = new NivelesAccesoTableAdapter();
             _empleados = new EmpleadoTableAdapter();
 
+
+
             // cadenas de conexion dinamicas
             _clientes.Connection.ConnectionString = "Data Source = (LocalDB)\\MSSQLLocalDB; AttachDbFilename = " + Environment.CurrentDirectory.Split("WinUI")[0] + "Database\\PaintingStoreDatabase.mdf; Integrated Security = True";
             _proveedores.Connection.ConnectionString = "Data Source = (LocalDB)\\MSSQLLocalDB; AttachDbFilename = " + Environment.CurrentDirectory.Split("WinUI")[0] + "Database\\PaintingStoreDatabase.mdf; Integrated Security = True";

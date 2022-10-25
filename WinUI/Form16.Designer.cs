@@ -43,6 +43,10 @@
             this.button2 = new System.Windows.Forms.Button();
             this.domainUpDown1 = new System.Windows.Forms.DomainUpDown();
             this.button3 = new System.Windows.Forms.Button();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
@@ -115,6 +119,10 @@
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(222, 27);
             this.dateTimePicker1.TabIndex = 7;
+            // 
+            // printDocument1
+            // 
+            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
             // 
             // dataGridView1
             // 
@@ -207,18 +215,58 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(499, 98);
+            this.button3.Location = new System.Drawing.Point(355, 192);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(170, 39);
             this.button3.TabIndex = 13;
             this.button3.Text = "Imprimir Factura.";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Location = new System.Drawing.Point(609, 24);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(222, 28);
+            this.comboBox3.TabIndex = 15;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(465, 27);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(123, 20);
+            this.label5.TabIndex = 14;
+            this.label5.Text = "Método de Pago:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(465, 82);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(49, 20);
+            this.label6.TabIndex = 16;
+            this.label6.Text = "Total: ";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(609, 68);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.PlaceholderText = "Total de la compra.";
+            this.textBox2.Size = new System.Drawing.Size(222, 34);
+            this.textBox2.TabIndex = 17;
             // 
             // Form16
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(891, 443);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.comboBox3);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.domainUpDown1);
             this.Controls.Add(this.button2);
@@ -260,5 +308,9 @@
         private Button button2;
         private DomainUpDown domainUpDown1;
         private Button button3;
+        private ComboBox comboBox3;
+        private Label label5;
+        private Label label6;
+        private TextBox textBox2;
     }
 }
