@@ -293,6 +293,7 @@
             this.textBox3.PlaceholderText = "Total de la factura";
             this.textBox3.Size = new System.Drawing.Size(195, 26);
             this.textBox3.TabIndex = 18;
+            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // label7
             // 
@@ -369,6 +370,7 @@
             this.textBox5.PlaceholderText = "Total de pago";
             this.textBox5.Size = new System.Drawing.Size(116, 26);
             this.textBox5.TabIndex = 25;
+            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
             // button4
             // 

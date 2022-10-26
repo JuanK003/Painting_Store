@@ -220,5 +220,29 @@ namespace WinUI
 
             }
         }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                textBox3.Text = Math.Round(double.Parse(textBox3.Text)*100)/100 + "";
+            }
+            catch
+            {
+
+            }
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                textBox5.Text = Math.Round(double.Parse(textBox5.Text) * 100) / 100 + "";
+            }
+            catch
+            {
+
+            }
+        }
     }
 }
