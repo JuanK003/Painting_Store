@@ -125,7 +125,7 @@ namespace WinUI
             for (int i = 1; i <= listaproductos.Rows.Count; i++)
             {
                 listaproductos.Rows[i - 1][0] = i;
-                sum += (double)listaproductos.Rows[i - 1][5];
+                sum += double.Parse((string)listaproductos.Rows[i - 1][5]);
             }
 
             dataGridView3.DataSource = listaproductos;
@@ -152,11 +152,11 @@ namespace WinUI
             for (int i = 1; i <= metodosparapagar.Rows.Count; i++)
             {
                 metodosparapagar.Rows[i - 1][0] = i;
-                sum += (double)metodosparapagar.Rows[i - 1][4];
+                sum += double.Parse((string)metodosparapagar.Rows[i - 1][metodosparapagar.Columns.Count - 1]);
             }
 
-            //dataGridView3.DataSource = metodosparapagar;
-            //dataGridView3.Refresh();
+            dataGridView2.DataSource = metodosparapagar;
+            dataGridView2.Refresh();
             textBox5.Text = sum + "";
         }
 
@@ -165,17 +165,32 @@ namespace WinUI
         {
             // metodosparapagar 
             // { "Id", "IdTipoMetodo", "TipoMetodo", "Datos", "Cantidad" }
+            
             try
             {
                 if (textBox4.Text != "")
                 {
-                    double cantidad = Convert.ToDouble(textBox4.Text);
-                    metodosparapagar.Rows.Add(new Object[] { metodosparapagar.Rows.Count, programUtils.getFieldOfComboBoxSelectedItem(comboBox3, 0), programUtils.getFieldOfComboBoxSelectedItem(comboBox3, 1), textBox4.Text, cantidad });
+                    double cantidad = double.Parse(textBox2.Text);
+                    metodosparapagar.Rows.Add(new Object[] { metodosparapagar.Rows.Count + 1, programUtils.getFieldOfComboBoxSelectedItem(comboBox3, 0), programUtils.getFieldOfComboBoxSelectedItem(comboBox3, 1), textBox4.Text, cantidad });
+                    refreshlistametodospago();
                 }
             }
             catch (Exception ex)
             {
                 msmanager.Show(this, "ERROR: " + ex.Message);
+            }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            if (dataGridView2.SelectedCells.Count > 0)
+            {
+                metodosparapagar.Rows.RemoveAt(dataGridView2.SelectedCells[0].RowIndex);
+                refreshlistametodospago();
+            }
+            else
+            {
+                msmanager.Show(this, "ERROR: Debe seleccionar al menos una opcion de pago para remover!");
             }
         }
     }
