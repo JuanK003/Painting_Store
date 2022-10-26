@@ -213,6 +213,22 @@ namespace BLL
             }
         }
 
+        public string AnularFactura(string factura)
+        {
+            string msg = "";
+
+            try
+            {
+                _factura.sp_AnularFacturacion(factura, ref msg);
+            }
+            catch (Exception error)
+            {
+                msg = "ERROR: " + error.Message;
+            }
+
+            return msg;
+        }
+
         public string ActualizarProveedor(int id, string nombre, string telefono, string direccion, string contacto)
         {
             try

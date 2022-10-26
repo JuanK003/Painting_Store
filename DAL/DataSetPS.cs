@@ -353,6 +353,18 @@ namespace DAL
 namespace DAL
 {
 }
+
+namespace DAL
+{
+}
+
+namespace DAL
+{
+}
+
+namespace DAL
+{
+}
 namespace DAL.DataSetPSTableAdapters
 {
     partial class MetodoPagoTableAdapter
