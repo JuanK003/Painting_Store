@@ -40,6 +40,7 @@ namespace WinUI
         private void button3_Click(object sender, EventArgs e)
         {
             this.printDocument1.Print();
+            // antes de imprimir
         }
 
         private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
