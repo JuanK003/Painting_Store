@@ -15,9 +15,7 @@ namespace BLL
         private DetalleFacturaTableAdapter _detalleFactura;
         private MetodoPagoTableAdapter _metodoPago;
         private PagoFacturaTableAdapter _pagoFactura;
-
-
-
+        
 
         private PresentacionProductoTableAdapter _presentacionProducto;
         private MarcaProductoTableAdapter _marca;
@@ -37,7 +35,7 @@ namespace BLL
             _detalleFactura = new DetalleFacturaTableAdapter();
             _metodoPago = new MetodoPagoTableAdapter();
             _pagoFactura = new PagoFacturaTableAdapter();
-
+            
             // cadenas de conexion dinamicas
             _clientes.Connection.ConnectionString = "Data Source = (LocalDB)\\MSSQLLocalDB; AttachDbFilename = " + Environment.CurrentDirectory.Split("WinUI")[0] + "Database\\PaintingStoreDatabase.mdf; Integrated Security = True";
             _proveedores.Connection.ConnectionString = "Data Source = (LocalDB)\\MSSQLLocalDB; AttachDbFilename = " + Environment.CurrentDirectory.Split("WinUI")[0] + "Database\\PaintingStoreDatabase.mdf; Integrated Security = True";
@@ -48,7 +46,7 @@ namespace BLL
             _detalleFactura.Connection.ConnectionString = "Data Source = (LocalDB)\\MSSQLLocalDB; AttachDbFilename = " + Environment.CurrentDirectory.Split("WinUI")[0] + "Database\\PaintingStoreDatabase.mdf; Integrated Security = True";
             _metodoPago.Connection.ConnectionString = "Data Source = (LocalDB)\\MSSQLLocalDB; AttachDbFilename = " + Environment.CurrentDirectory.Split("WinUI")[0] + "Database\\PaintingStoreDatabase.mdf; Integrated Security = True";
             _pagoFactura.Connection.ConnectionString = "Data Source = (LocalDB)\\MSSQLLocalDB; AttachDbFilename = " + Environment.CurrentDirectory.Split("WinUI")[0] + "Database\\PaintingStoreDatabase.mdf; Integrated Security = True";
-
+            
 
             _presentacionProducto = new PresentacionProductoTableAdapter();
             _marca = new MarcaProductoTableAdapter();
@@ -63,6 +61,21 @@ namespace BLL
             _productos.Connection.ConnectionString = "Data Source = (LocalDB)\\MSSQLLocalDB; AttachDbFilename = " + Environment.CurrentDirectory.Split("WinUI")[0] + "Database\\PaintingStoreDatabase.mdf; Integrated Security = True";
             _pedidoProducto.Connection.ConnectionString = "Data Source = (LocalDB)\\MSSQLLocalDB; AttachDbFilename = " + Environment.CurrentDirectory.Split("WinUI")[0] + "Database\\PaintingStoreDatabase.mdf; Integrated Security = True";
             _entradaProducto.Connection.ConnectionString = "Data Source = (LocalDB)\\MSSQLLocalDB; AttachDbFilename = " + Environment.CurrentDirectory.Split("WinUI")[0] + "Database\\PaintingStoreDatabase.mdf; Integrated Security = True";
+        }
+
+        public string sp_facturacion(string factura, double monto, int empleado, int cliente, DataTable productos, DataTable metodospago)
+        {
+            string msg = "";
+            try
+            {
+                _factura.sp_Facturacion(factura, Convert.ToDecimal(monto), empleado, cliente, productos, metodospago, ref msg);
+            }
+            catch (Exception ex)
+            {
+                msg = "ERROR: " + ex.Message;
+            }
+
+            return msg;
         }
 
         public DataTable ListarProductosConNombres()
