@@ -39,8 +39,9 @@ namespace WinUI
 
         private void button3_Click(object sender, EventArgs e)
         {
-            this.printDocument1.Print();
-            // antes de imprimir
+            string msg = logica.sp_facturacion(textBox1.Text, Convert.ToDouble(textBox3.Text), (int)programUtils.getFieldOfComboBoxSelectedItem(comboBox1, 0), (int)programUtils.getFieldOfComboBoxSelectedItem(comboBox2, 0), listaproductos, metodosparapagar);
+            msmanager.Show(this, msg);
+            //this.printDocument1.Print();
         }
 
         private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
