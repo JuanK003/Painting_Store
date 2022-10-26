@@ -170,6 +170,11 @@ namespace BLL
             return _nivelesacceso.GetData();
         }
 
+        public DataTable ListarFacturas()
+        {
+            return _factura.GetData();
+        }
+
         public void restoreNivelesAcceso()
         {
             _nivelesacceso.DeleteQueryReset();
@@ -177,6 +182,16 @@ namespace BLL
             _nivelesacceso.InsertQueryNivelesAcceso("Bodeguero", 2);
             _nivelesacceso.InsertQueryNivelesAcceso("Cajero", 3);
             _nivelesacceso.InsertQueryNivelesAcceso("Gerente", 4);
+        }
+
+        public DataTable[] ListarDetallesFactura(string factura)
+        {
+            DataTable[] ret = new DataTable[2];
+
+            ret[0] = _detalleFactura.GetDataByFacturaId(factura);
+            ret[1] = _pagoFactura.GetDataByFacturaId(factura);
+
+            return ret;
         }
 
         // Tabla Proveedores
