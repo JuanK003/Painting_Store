@@ -48,13 +48,13 @@ namespace WinUI
                 if (msg.ToLower().StartsWith("info"))
                 {
                     this.Dispose();
+                    this.printDocument1.Print();
                 }
             }
             else
             {
                 msmanager.Show(this, "ERROR: Debe ingresa el serial de la factura!");
             }
-            //this.printDocument1.Print();
         }
 
         private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
@@ -62,29 +62,42 @@ namespace WinUI
             Font font = new Font("Arial", 14);
             int ancho = 1000;
             int y = 20;
+            int c = 0;
 
-            e.Graphics.DrawString("------------------------------------------------------------------------------------------------------------------------------------------------------- ", font, Brushes.Black, new RectangleF(0, y += 20, ancho, 20));
-            e.Graphics.DrawString("                                                 Encabezado de factura", font, Brushes.Black, new RectangleF(0, y += 20, ancho, 20));
-            e.Graphics.DrawString("                                                 Empleado " + comboBox1.Text.ToString() + "                               ", font, Brushes.Black, new RectangleF(0, y += 20, ancho, 20));
-            e.Graphics.DrawString("                                                 No. Cliente: " + comboBox2.Text.ToString() + "                               ", font, Brushes.Black, new RectangleF(0, y += 20, ancho, 20));
-            e.Graphics.DrawString("                                                 Tipo de pago " + comboBox3.Text.ToString() + "                               ", font, Brushes.Black, new RectangleF(0, y += 20, ancho, 20));
-            e.Graphics.DrawString("                                                 Fecha " + DateTime.Now.ToString() + "                               ", font, Brushes.Black, new RectangleF(0, y += 20, ancho, 20));
-            e.Graphics.DrawString("-------------------------------------------------------------------------------------------------------------------------------------------------------n", font, Brushes.Black, new RectangleF(0, y += 20, ancho, 20));
+            e.Graphics.DrawString("\t --------------------------------------------------------------------------------------------------------- \n", font, Brushes.Black, new RectangleF(0, y += 20, ancho, 20));
+            e.Graphics.DrawString("\t                                                         Ferreteria Briser → Tú mejor opción", font, Brushes.Black, new RectangleF(0, y += 20, ancho, 20));
+            e.Graphics.DrawString("\t                                                  Empleado: " + programUtils.getFieldOfComboBoxSelectedItem(comboBox1, 3) + "                 \n              ", font, Brushes.Black, new RectangleF(0, y += 20, ancho, 20));
+            e.Graphics.DrawString("\t                                                   Cliente: " + programUtils.getFieldOfComboBoxSelectedItem(comboBox2, 1) + "              \n                 ", font, Brushes.Black, new RectangleF(0, y += 20, ancho, 20));
+            e.Graphics.DrawString("\t                                                  Fecha de Emisión: " + DateTime.Now.ToString() + "               \n                ", font, Brushes.Black, new RectangleF(0, y += 20, ancho, 20));
+            e.Graphics.DrawString("\t --------------------------------------------------------------------------------------------------------- \n", font, Brushes.Black, new RectangleF(0, y += 20, ancho, 20));
 
-            e.Graphics.DrawString("-------------------------------------------------------------------------------------------------------------------------------------------------------", font, Brushes.Black, new RectangleF(0, y += 20, ancho, 20));
-            e.Graphics.DrawString("                                                 Detalles de productos", font, Brushes.Black, new RectangleF(0, y += 30, ancho, 20));
-            e.Graphics.DrawString("-------------------------------------------------------------------------------------------------------------------------------------------------------n", font, Brushes.Black, new RectangleF(0, y += 20, ancho, 20));
+            e.Graphics.DrawString("\t --------------------------------------------------------------------------------------------------------- ", font, Brushes.Black, new RectangleF(0, y += 20, ancho, 20));
+            e.Graphics.DrawString("\t                                                  Detalles de productos: ", font, Brushes.Black, new RectangleF(0, y += 30, ancho, 20));
+            e.Graphics.DrawString("\t --------------------------------------------------------------------------------------------------------- \n", font, Brushes.Black, new RectangleF(0, y += 20, ancho, 20));
 
-            for (int i = 0; this.dataGridView2.Rows.Count -1 > i; i++)
+            e.Graphics.DrawString("\t                                                  Artículos:\n ", font, Brushes.Black, new RectangleF(0, y += 30, ancho, 20));
+            e.Graphics.DrawString("\t --------------------------------------------------------------------------------------------------------- \n", font, Brushes.Black, new RectangleF(0, y += 20, ancho, 20));
+
+
+            for (int i = 0; i < listaproductos.Rows.Count ; i++)
             {
-                e.Graphics.DrawString(dataGridView2.Rows[i].Cells[0].Value.ToString() + "           " + dataGridView2.Rows[i].Cells[1].Value.ToString() + "            " + dataGridView2.Rows[i].Cells[2].Value.ToString() + "            " + dataGridView2.Rows[i].Cells[3].Value.ToString() + "         " + dataGridView2.Rows[i].Cells[4].Value.ToString(), font, Brushes.Black, new RectangleF(0, y += 20, ancho, 20));
+                e.Graphics.DrawString("\t " + listaproductos.Rows[i][0].ToString() + "           " + listaproductos.Rows[i][1].ToString() + "            " + listaproductos.Rows[i][2].ToString() + "            " + listaproductos.Rows[i][3].ToString() + "         " + listaproductos.Rows[i][4].ToString()+"    ", font, Brushes.Black, new RectangleF(0, y += 20, ancho, 20));
                 y += 25;
             }
 
-            e.Graphics.DrawString("------------------------------------------------------------------------------------------------------------------------------------------------------- ", font, Brushes.Black, new RectangleF(0, y += 20, ancho, 20));
-            e.Graphics.DrawString("                                                  Total " + textBox2.Text.ToString(), font, Brushes.Black, new RectangleF(0, y += 30, ancho, 20));
-            e.Graphics.DrawString("------------------------------------------------------------------------------------------------------------------------------------------------------- ",font, Brushes.Black, new RectangleF(0, y += 20, ancho, 20));
+            e.Graphics.DrawString("\t                                                  Metodos de Pago:\n ", font, Brushes.Black, new RectangleF(0, y += 30, ancho, 20));
+            e.Graphics.DrawString("\t --------------------------------------------------------------------------------------------------------- \n", font, Brushes.Black, new RectangleF(0, y += 20, ancho, 20));
 
+
+            for (int i = 0; i < metodosparapagar.Rows.Count; i++)
+            {
+                e.Graphics.DrawString("\t " + metodosparapagar.Rows[i][0].ToString() + "           " + metodosparapagar.Rows[i][1].ToString() + "            " + metodosparapagar.Rows[i][2].ToString() + "            " + metodosparapagar.Rows[i][3].ToString() + "         " + metodosparapagar.Rows[i][4].ToString() + "    ", font, Brushes.Black, new RectangleF(0, y += 20, ancho, 20));
+                y += 25;
+            }
+
+            e.Graphics.DrawString("\t --------------------------------------------------------------------------------------------------------- \n", font, Brushes.Black, new RectangleF(0, y += 20, ancho, 20));
+            e.Graphics.DrawString("\t                                                   Total: " + textBox3.Text.ToString(), font, Brushes.Black, new RectangleF(0, y += 30, ancho, 20));
+            e.Graphics.DrawString("\t --------------------------------------------------------------------------------------------------------- \n", font, Brushes.Black, new RectangleF(0, y += 20, ancho, 20));
         }
 
         private void Form16_Load(object sender, EventArgs e)
@@ -243,6 +256,12 @@ namespace WinUI
             {
 
             }
+        }
+
+        private void dataGridView3_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+           
         }
     }
 }

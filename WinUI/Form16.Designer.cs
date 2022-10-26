@@ -333,6 +333,7 @@
             this.dataGridView3.RowTemplate.Height = 29;
             this.dataGridView3.Size = new System.Drawing.Size(295, 141);
             this.dataGridView3.TabIndex = 22;
+            this.dataGridView3.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView3_CellContentClick);
             // 
             // label9
             // 
