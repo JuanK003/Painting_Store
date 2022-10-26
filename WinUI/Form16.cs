@@ -1,4 +1,5 @@
 ﻿using BLL;
+using MessageManager;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,6 +14,19 @@ namespace WinUI
 {
     public partial class Form16 : Form
     {
+        MyProgramUtils programUtils = new MyProgramUtils();
+        ClassLogicaJP logica = new ClassLogicaJP();
+        ClassMessageManager msmanager = new ClassMessageManager();
+        DataTable listaproductos = new DataTable()
+        {
+            Columns = { "Id", "IdProducto", "NombreProducto", "Precio", "Cantidad", "Subtotal" }
+        };
+
+        DataTable metodosparapagar = new DataTable()
+        {
+            Columns = { "Id", "IdTipoMetodo", "TipoMetodo", "Datos", "Cantidad" }
+        };
+
         public Form16()
         {
             InitializeComponent();
@@ -56,6 +70,113 @@ namespace WinUI
             e.Graphics.DrawString("                                                  Total " + textBox2.Text.ToString(), font, Brushes.Black, new RectangleF(0, y += 30, ancho, 20));
             e.Graphics.DrawString("------------------------------------------------------------------------------------------------------------------------------------------------------- ",font, Brushes.Black, new RectangleF(0, y += 20, ancho, 20));
 
+        }
+
+        private void Form16_Load(object sender, EventArgs e)
+        {
+            comboBox1.DataSource = logica.ListarEmpleados();
+            comboBox1.DisplayMember = "NombreEmpleado";
+
+            comboBox2.DataSource = logica.ListarClientes();
+            comboBox2.DisplayMember = "NombreCliente";
+
+            comboBox3.DataSource = logica.ListarMetodosPago();
+            comboBox3.DisplayMember = "NombreMetodoPago";
+
+            dataGridView1.DataSource = logica.ListarProductosConNombres();
+            dataGridView1.Refresh();
+
+            dateTimePicker1.Value = DateTime.Now;
+            dateTimePicker1.Enabled = false;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                double cantidad = Convert.ToDouble(domainUpDown1.Text);
+
+                if (dataGridView1.SelectedCells.Count > 0 && cantidad > 0)
+                {
+                    int idprod = (int)programUtils.getFieldOfSelectedCell(dataGridView1, 0);
+                    string pnombre = (string)programUtils.getFieldOfSelectedCell(dataGridView1, 1);
+                    double precio = (double)programUtils.getFieldOfSelectedCell(dataGridView1, 3);
+                    double subtotal = precio * cantidad;
+
+                    // { "Id", "IdProducto", "NombreProducto", "Precio", "Cantidad", "Subtotal" }
+                    listaproductos.Rows.Add(new Object[] { listaproductos.Rows.Count + 1, idprod, pnombre, precio, cantidad, subtotal });
+                    refreshlistafactura();
+                }
+                else
+                {
+                    msmanager.Show(this, "ERROR: Debe seleccionar un ítem de la lista y debe comprar al menos un elemento del ítem seleccionado de la lista de productos!");
+                }
+            }
+            catch (Exception ex)
+            {
+                msmanager.Show(this, "ERROR: " + ex.Message);
+            }
+            
+        }
+
+        void refreshlistafactura()
+        {
+            double sum = 0;
+            for (int i = 1; i <= listaproductos.Rows.Count; i++)
+            {
+                listaproductos.Rows[i - 1][0] = i;
+                sum += (double)listaproductos.Rows[i - 1][5];
+            }
+
+            dataGridView3.DataSource = listaproductos;
+            dataGridView3.Refresh();
+            textBox3.Text = sum + "";
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (dataGridView3.SelectedCells.Count > 0)
+            {
+                listaproductos.Rows.RemoveAt(dataGridView3.SelectedCells[0].RowIndex);
+                refreshlistafactura();
+            }
+            else
+            {
+                msmanager.Show(this, "ERROR: Debe seleccionar al menos un item de la factura a retirar!");
+            }
+        }
+
+        void refreshlistametodospago()
+        {
+            double sum = 0;
+            for (int i = 1; i <= metodosparapagar.Rows.Count; i++)
+            {
+                metodosparapagar.Rows[i - 1][0] = i;
+                sum += (double)metodosparapagar.Rows[i - 1][4];
+            }
+
+            //dataGridView3.DataSource = metodosparapagar;
+            //dataGridView3.Refresh();
+            textBox5.Text = sum + "";
+        }
+
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            // metodosparapagar 
+            // { "Id", "IdTipoMetodo", "TipoMetodo", "Datos", "Cantidad" }
+            try
+            {
+                if (textBox4.Text != "")
+                {
+                    double cantidad = Convert.ToDouble(textBox4.Text);
+                    metodosparapagar.Rows.Add(new Object[] { metodosparapagar.Rows.Count, programUtils.getFieldOfComboBoxSelectedItem(comboBox3, 0), programUtils.getFieldOfComboBoxSelectedItem(comboBox3, 1), textBox4.Text, cantidad });
+                }
+            }
+            catch (Exception ex)
+            {
+                msmanager.Show(this, "ERROR: " + ex.Message);
+            }
         }
     }
 }
