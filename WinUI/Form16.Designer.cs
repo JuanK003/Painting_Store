@@ -280,7 +280,7 @@
             this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
-            this.textBox2.PlaceholderText = "Total de la compra.";
+            this.textBox2.PlaceholderText = "Cantidad.";
             this.textBox2.Size = new System.Drawing.Size(195, 26);
             this.textBox2.TabIndex = 17;
             // 
@@ -309,7 +309,7 @@
             this.textBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
-            this.textBox4.PlaceholderText = "Total de la compra.";
+            this.textBox4.PlaceholderText = "Num tarjetas, cheques, etc.";
             this.textBox4.Size = new System.Drawing.Size(195, 26);
             this.textBox4.TabIndex = 21;
             // 
@@ -366,7 +366,7 @@
             this.textBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox5.Multiline = true;
             this.textBox5.Name = "textBox5";
-            this.textBox5.PlaceholderText = "Total de la compra.";
+            this.textBox5.PlaceholderText = "Total de pago";
             this.textBox5.Size = new System.Drawing.Size(116, 26);
             this.textBox5.TabIndex = 25;
             // 
