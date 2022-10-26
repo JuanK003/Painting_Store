@@ -43,12 +43,12 @@ namespace WinUI
             {
                 string msg = logica.sp_facturacion(textBox1.Text, Convert.ToDouble(textBox3.Text), (int)programUtils.getFieldOfComboBoxSelectedItem(comboBox1, 0), (int)programUtils.getFieldOfComboBoxSelectedItem(comboBox2, 0), listaproductos, metodosparapagar);
 
+                msmanager.Show(this, msg);
+
                 if (msg.ToLower().StartsWith("info"))
                 {
                     this.Dispose();
                 }
-
-                msmanager.Show(this, msg);
             }
             else
             {
