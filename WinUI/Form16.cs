@@ -39,8 +39,21 @@ namespace WinUI
 
         private void button3_Click(object sender, EventArgs e)
         {
-            string msg = logica.sp_facturacion(textBox1.Text, Convert.ToDouble(textBox3.Text), (int)programUtils.getFieldOfComboBoxSelectedItem(comboBox1, 0), (int)programUtils.getFieldOfComboBoxSelectedItem(comboBox2, 0), listaproductos, metodosparapagar);
-            msmanager.Show(this, msg);
+            if (textBox1.Text != "")
+            {
+                string msg = logica.sp_facturacion(textBox1.Text, Convert.ToDouble(textBox3.Text), (int)programUtils.getFieldOfComboBoxSelectedItem(comboBox1, 0), (int)programUtils.getFieldOfComboBoxSelectedItem(comboBox2, 0), listaproductos, metodosparapagar);
+
+                if (msg.ToLower().StartsWith("info"))
+                {
+                    this.Dispose();
+                }
+
+                msmanager.Show(this, msg);
+            }
+            else
+            {
+                msmanager.Show(this, "ERROR: Debe ingresa el serial de la factura!");
+            }
             //this.printDocument1.Print();
         }
 
@@ -193,6 +206,18 @@ namespace WinUI
             else
             {
                 msmanager.Show(this, "ERROR: Debe seleccionar al menos una opcion de pago para remover!");
+            }
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+            }
+            catch (Exception ex)
+            {
+
             }
         }
     }
