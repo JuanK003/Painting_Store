@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace WinUI
 {
@@ -24,13 +25,23 @@ namespace WinUI
 
         private void button3_Click(object sender, EventArgs e)
         {
-            string msg = logica.AnularFactura(textBox1.Text);
-
-            msmanager.Show(this, msg);
-
-            if (msg.ToLower().StartsWith("info"))
+            if(string.IsNullOrEmpty(textBox1.Text))
             {
-                this.Dispose();
+                MessageBox.Show( "Debes de llenar el campo!", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                return;
+            }
+
+            else
+            {
+                string msg = logica.AnularFactura(textBox1.Text);
+
+                msmanager.Show(this, msg);
+
+                if (msg.ToLower().StartsWith("info"))
+                {
+                    this.Dispose();
+                }
             }
         }
     }
